@@ -1,0 +1,108 @@
+---
+import Default from "../../layouts/Default.astro"
+import HomeIcon from "../../icons/home-svgrepo-com.astro"
+import NextIcon from "../../icons/next-outline-svgrepo-com.astro"
+import PrevIcon from "../../icons/previous-outline-svgrepo-com.astro"
+
+
+---
+<Default title=" Introduction ">
+
+	<div class=" flex flex-col snap-mandatory h-full snap-y w-screen items-center bg-slate-900">
+
+		<section id="intro" class="snap-start w-lvw bg-slate-300 ">
+			<div class=" bg-black flex justify-between overflow-hidden">
+				<h1 class="titleLeft font-bold text-9xl text-white content-center p-20 text-center">Introduction</h1>
+			</div>
+		</section>
+        <section class="content bg-slate-900 w-full text-3xl font-oswald">
+            <div class="mx-auto w-4/5 p-10 text-white">
+                <p>
+                    A young Tibetan woman living in Northern India takes a trip back to her village in Tibet to visit family. For the last two years she has been working for Drewla, a Tibetan NGO that provides ways for Tibetans inside Tibet to connect with the diaspora online. The trip does not go as planned.A young Tibetan woman living in Northern India takes a trip back to her village in Tibet to visit family. For the last two years she has been working for Drewla, a Tibetan NGO that provides ways for Tibetans inside Tibet to connect with the diaspora online. The trip does not go as planned.
+                </p>
+                <p>
+                    When she reaches the Nepalese-Tibetan border she is immediately taken into detention and held for two months. Chinese authorities interrogate her about her employment in Dharamsala. The young woman denies being involved in any political activities and insists she went to Dharamsala for studies. The authorities present a stack of chat transcripts from conversations she has had online. They explain they have been monitoring Drewla and know about its activities. They eventually release the woman and allow her to travel to her village with a message for her colleagues back in Dharamsala: “You are not welcome to return to Tibet”.
+                </p>
+                <p>
+                    Drewla was indeed under surveillance. Researchers at the Citizen Lab at the University of Toronto ran an investigation into the networks of Drewla and other Tibetan organizations in 2009 and found they were all infected by malware that connected to GhostNet, a digital espionage network.1 The goal of GhostNet was to maintain clandestine access to computer networks and communications for as long as possible.
+                </p>
+                <p>
+                    Tibetans were not the only targets. GhostNet infiltrated over a thousand computers in over one hundred countries around the world. The command and control servers used to operate the malware were traced back to China, and the targets all had a common connection: geopolitical interest to the People’s Republic of China (PRC). Exposing this network revealed to the world a dark truth that Tibetans had known for years: China uses targeted malware as a form of digital espionage to spy on its opponents.
+                </p>
+                <p>
+                    The Tibetan community has been targeted by digital espionage for over 20 years by groups with ties to the PRC. These coordinated campaigns aim to infiltrate the communications and data of key people and organizations in the movement. This form of spying violates rights to privacy, assembly, and free speech. Digital espionage is a form of transnational repression that extends the reach of authoritarian states beyond their borders to surveil, harass, and intimidate political opponents and marginalized groups. By infiltrating digital communications and preemptively identifying dissent, the PRC aims to counteract any challenges to its authority, both domestically and internationally.
+                </p>
+                <p>
+                    Targeted espionage campaigns against the Tibetan movement have been widely documented by Threat Intelligence companies and research groups.2 Missing from these reports are the voices of the community and discussion of how decades of digital espionage impact the movement. This report documents the history of digital espionage against the Tibetan community through first hand accounts of targeted people and groups. These stories reveal the harms of digital transnational repression and show how the Tibetan movement has built capacity to defend against the threat.
+                </p>
+                <p>
+                    The arduous history of digital espionage against the Tibetan community acts as a canary in the coal mine for global civil society. We provide a warning that harnessing the power of information technology for social movements requires vigilant attention to digital security. The stories shared in this report present the harms of digital threats while also offering a message of empowerment that shows how social movements under repression from authoritarianism can persevere and continue to speak truth to power.
+                </p>
+            </div>
+
+
+        </section>
+
+        <section id="intro" class="snap-start w-full bg-slate-500  ">
+            <div class="flex space-between items-center w-11/12">
+                <div class="  overflow-hidden w-2/5 flex justify-end">
+                    <h1 class="titlePrev font-bold text-4xl text-white  p-20  inline-flex items-center"> Home <PrevIcon/> </h1>
+                </div>
+                <div class="w-1/5 h-40  rounded-lg  flex items-center justify-center">
+                    <a href="/"><HomeIcon/></a>
+                </div>
+                <div class=" overflow-hidden w-2/5  flex justify-start">
+                    
+                    <h1 class="titleNext font-bold text-4xl text-white text-center p-20  inline-flex items-center"><NextIcon/> The Tibet Movement Goes Online </h1>
+                </div>
+            </div>
+		</section>
+        <section id="pagination" class="snap-start w-lvw bg-slate-900 h-80">
+			
+		</section>
+
+	</div>
+    <script> 
+ 
+            import { gsap } from "gsap";
+         import  ScrollTrigger  from "gsap/ScrollTrigger";
+         gsap.registerPlugin(ScrollTrigger);
+          
+         const titlePrev = gsap.utils.toArray(".titlePrev");
+         titlePrev.forEach((title,i)=>{
+             gsap.from(title, {
+             scrollTrigger:{
+             trigger: title,
+             start: "top 100%",
+             end: "end 0%",
+             scrub: true,
+             markers: true
+             },
+             opacity: 0, x:-900,duration: 2,scale: 2 
+         })})
+     
+
+         const titleNext = gsap.utils.toArray(".titleNext");
+         titleNext.forEach((title,i)=>{
+             gsap.from(title, {
+             scrollTrigger:{
+             trigger: title,
+             start: "top 100%",
+             end: "end 0%",
+             scrub: true,
+             markers: true
+             },
+             opacity: 0, x:900,duration: 2,scale: 2 
+         })})
+     
+
+         // text fpr paragraph
+
+        
+   
+     </script>
+
+
+
+	
+</Default>
