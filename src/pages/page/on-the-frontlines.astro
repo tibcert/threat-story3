@@ -3,8 +3,6 @@ import Default from "../../layouts/Default.astro"
 import HomeIcon from "../../icons/home-svgrepo-com.astro"
 import NextIcon from "../../icons/next-outline-svgrepo-com.astro"
 import PrevIcon from "../../icons/previous-outline-svgrepo-com.astro"
-
-
 ---
 <Default title="On The Frontlines">
 
@@ -15,32 +13,41 @@ import PrevIcon from "../../icons/previous-outline-svgrepo-com.astro"
 				<h1 class="titleLeft font-bold text-9xl text-white content-center p-20 text-center" transition:name="title4">On The Frontlines</h1>
 			</div>
 		</section>
+        
         <section class="content bg-slate-900 w-full text-3xl font-oswald">
             <div class="mx-auto w-4/5 p-10 text-white">
+                <p>While incidents of digital espionage against the Tibetan community are well documented in threat intelligence reports, the focus is almost always on the technical aspects alone. These reports have no understanding of the social and political context in which these threats occur. Without this context it is not possible to understand the harm of digital espionage.</p>
                 <p>
-                    A young Tibetan woman living in Northern India takes a trip back to her village in Tibet to visit family. For the last two years she has been working for Drewla, a Tibetan NGO that provides ways for Tibetans inside Tibet to connect with the diaspora online. The trip does not go as planned.A young Tibetan woman living in Northern India takes a trip back to her village in Tibet to visit family. For the last two years she has been working for Drewla, a Tibetan NGO that provides ways for Tibetans inside Tibet to connect with the diaspora online. The trip does not go as planned.
+                Only paying attention to the malware and other technical tricks being used in digital espionage is like investigating a shooting but only analyzing the gun. When gun crime is investigated, the forensic details of the bullet may help connect similar attacks and maybe even trace it to the shooter, but if the damage against the victim and the context in which the attack happened is ignored the nature and impact of the crime cannot be properly assessed. Digital espionage is no different. A full understanding of digital espionage requires a wider and deeper view into the issue. We interviewed members of the Tibet movement who have been targeted by digital espionage to document the history of the threat against the community and show the impact.
                 </p>
-                <p>
-                    When she reaches the Nepalese-Tibetan border she is immediately taken into detention and held for two months. Chinese authorities interrogate her about her employment in Dharamsala. The young woman denies being involved in any political activities and insists she went to Dharamsala for studies. The authorities present a stack of chat transcripts from conversations she has had online. They explain they have been monitoring Drewla and know about its activities. They eventually release the woman and allow her to travel to her village with a message for her colleagues back in Dharamsala: “You are not welcome to return to Tibet”.
-                </p>
-                <p>
-                    Drewla was indeed under surveillance. Researchers at the Citizen Lab at the University of Toronto ran an investigation into the networks of Drewla and other Tibetan organizations in 2009 and found they were all infected by malware that connected to GhostNet, a digital espionage network.1 The goal of GhostNet was to maintain clandestine access to computer networks and communications for as long as possible.
-                </p>
-                <p>
-                    Tibetans were not the only targets. GhostNet infiltrated over a thousand computers in over one hundred countries around the world. The command and control servers used to operate the malware were traced back to China, and the targets all had a common connection: geopolitical interest to the People’s Republic of China (PRC). Exposing this network revealed to the world a dark truth that Tibetans had known for years: China uses targeted malware as a form of digital espionage to spy on its opponents.
-                </p>
-                <p>
-                    The Tibetan community has been targeted by digital espionage for over 20 years by groups with ties to the PRC. These coordinated campaigns aim to infiltrate the communications and data of key people and organizations in the movement. This form of spying violates rights to privacy, assembly, and free speech. Digital espionage is a form of transnational repression that extends the reach of authoritarian states beyond their borders to surveil, harass, and intimidate political opponents and marginalized groups. By infiltrating digital communications and preemptively identifying dissent, the PRC aims to counteract any challenges to its authority, both domestically and internationally.
-                </p>
-                <p>
-                    Targeted espionage campaigns against the Tibetan movement have been widely documented by Threat Intelligence companies and research groups.2 Missing from these reports are the voices of the community and discussion of how decades of digital espionage impact the movement. This report documents the history of digital espionage against the Tibetan community through first hand accounts of targeted people and groups. These stories reveal the harms of digital transnational repression and show how the Tibetan movement has built capacity to defend against the threat.
-                </p>
-                <p>
-                    The arduous history of digital espionage against the Tibetan community acts as a canary in the coal mine for global civil society. We provide a warning that harnessing the power of information technology for social movements requires vigilant attention to digital security. The stories shared in this report present the harms of digital threats while also offering a message of empowerment that shows how social movements under repression from authoritarianism can persevere and continue to speak truth to power.
-                </p>
+                <br>
+            <div class="grid grid-cols-3 ">
+                <div class="w-full flex h-80 items-center border-2 border-slate-400 justify-center relative overflow-hidden">
+                    <img src="../images/surveillance.jpg" alt="Surveillance" class="w-full absolute z-0 opacity-30 hover:opacity-20">
+                    
+                    <p class="z-20">A Movement Under Surveillance</p>
+                </div>
+                <div class="w-full flex h-80 items-center border-2 border-slate-400 justify-center relative overflow-hidden">
+                    <img src="../images/computer-security.jpg" alt="Surveillance" class="w-full absolute z-0 opacity-30 hover:opacity-20">
+                    <p class="z-20">Impersonation & Trust</p>
+                </div>
+                <div class="w-full flex h-80 items-center border-2 border-slate-400 justify-center relative overflow-hidden">
+                    <img src="../images/Greatfirewall.png" alt="Surveillance" class="w-full absolute z-0 opacity-30 hover:opacity-20">
+                    <p class="z-20">Poisoning The Well</p>
+                </div>
+                <div class="w-full flex h-80 items-center border-2 border-slate-400 justify-center relative overflow-hidden">
+                    <img src="../images/Uyghur.jpeg" alt="Surveillance" class="w-full absolute z-0 opacity-30 hover:opacity-20">
+                    <p class="z-20">Attempt To Silence The Voice Of Tibet</p>
+                </div>
+                <a data-modal-target="default-modal" data-modal-toggle="default-modal" class="cursor-pointer">
+                <div class="w-full flex h-80 items-center border-2 border-slate-400 justify-center relative overflow-hidden" >
+                    <img src="../images/mobile-security.jpeg" alt="mobile security" class="w-full absolute z-0 opacity-30 hover:opacity-20">
+                    <p class="z-20">The Spy In Your Pocket</p>
+                </div>
+            </a>
             </div>
 
-
+        </div>
         </section>
 
         <section id="intro" class="snap-start w-full bg-slate-500  ">
@@ -60,11 +67,46 @@ import PrevIcon from "../../icons/previous-outline-svgrepo-com.astro"
         <section id="pagination" class="snap-start w-lvw bg-slate-900 h-80">
 			
 		</section>
-
 	</div>
+
+    
+
+<!-- Modal toggle -->
+<button  class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+    Toggle modal
+  </button>
+  
+  <!-- Main modal -->
+  <div id="default-modal"  tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+      <div class="relative p-4 w-full max-w-4xl max-h-full">
+          <!-- Modal content -->
+          <div class="relative  bg-slate-900 text-white  rounded-lg shadow ">
+              <!-- Modal header -->
+              <div class="flex items-centerjustify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                  <h2 class="text-4xl dark:text-white">
+                    The Spy In Your Pocket
+                  </h2>
+                  <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal">
+                      <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                      </svg>
+                      <span class="sr-only">Close modal</span>
+                  </button>
+              </div>
+              <!-- Modal body -->
+              <div class="p-4 md:p-5 space-y-4">
+                  <p class=" text-2xl ">
+                    In the early 2010s, the rise of smartphones introduced new opportunities for connectivity for the Tibetan community. The ubiquity of mobile technology connected Tibetans in Tibet and the diaspora in ways that had not been experienced before. Reports from inside became available as events happened. Families separated by exile went from periodic updates to daily communications. But as this new connectivity flourished espionage threats went mobile as well.
+                  </p>
+              </div>
+             
+          </div>
+      </div>
+  </div>
+  
     <script> 
  
-            import { gsap } from "gsap";
+        import { gsap } from "gsap";
          import  ScrollTrigger  from "gsap/ScrollTrigger";
          gsap.registerPlugin(ScrollTrigger);
           
@@ -97,9 +139,6 @@ import PrevIcon from "../../icons/previous-outline-svgrepo-com.astro"
      
 
          // text fpr paragraph
-
-        
-   
      </script>
 
 
