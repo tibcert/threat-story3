@@ -1,0 +1,125 @@
+---
+import Default from "../../../layouts/Default.astro"
+import HomeIcon from "../../../icons/home-svgrepo-com.astro"
+import NextIcon from "../../../icons/next-outline-svgrepo-com.astro"
+import PrevIcon from "../../../icons/previous-outline-svgrepo-com.astro"
+
+const title = "Impersonation & Trust"
+
+---
+<Default title={title}>
+
+	<div class=" flex flex-col snap-mandatory h-full snap-y w-screen items-center bg-slate-900">
+
+		<section id="intro" class="snap-start w-lvw bg-slate-300 ">
+			<div class=" bg-black flex flex-col justify-between overflow-hidden">
+                <p class="text-slate-400 text-5xl text-center p-5 bg-slate-800 w-80 m-auto">On The Frontline</p>
+				<h1 class="titleLeft font-bold text-9xl text-white content-center p-20 text-center" transition:name="heading2">{title}</h1>
+			</div>
+		</section>
+        <section class="content bg-slate-900 w-full text-3xl font-oswald">
+            <div class="mx-auto w-4/5 p-20 text-white">
+                <video autoplay loop  controls class=" z-10 w-auto min-w-full min-h-full max-w-none">
+                <source
+                  src="https://tibcert.org/threat-story/images/lhadon.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="mx-auto w-4/5 p-10 text-white">
+                <p>
+                    Digital espionage against the community often impersonates known people and groups by sending messages and emails that appear to come from trusted sources. Through these impersonations malware can spread through the community and undermine the credibility of Tibetan groups.
+                </p>
+               <p>
+                The Tibetan Women’s Association (TWA) is a key group in the Tibet movement that originates in the courageous protests of Tibetan women against the illegal occupation of Tibet by China in 1959. Targeted digital espionage campaigns have impersonated TWA to send malicious messages to other groups for years.
+               </p>
+               <p>
+                In December 2018, a malicious email, purportedly from the TWA, circulated within the community. The email included a malicious attachment titled ‘Tibet was never a part of China’. Clicking on the attachment would infect the target’s computer with malware capable of extracting sensitive information. Similarly, in 2021, another impersonated email, titled ‘Inside Tibet and from the Tibetan exile community’, targeted institutions like the Library of Tibetan Works and Archive and offices of the Central Tibetan Administration (CTA) abroad. For victims using Firefox browser with Gmail logged in, clicking the malicious link grants near-total access to their Gmail accounts. These impersonation attacks not only exploit the trust and reputation of Tibetan institutions but also undermine the collective security of the Tibetan community.
+               </p>
+               <p>
+                Kelsang Dolma, the General Secretary of the TWA recounts the impact the incident had on the group.
+               </p>
+               <blockquote class="testamonial mx-auto w-4/5  text-white bg-slate-800  flex justify-between relative items-center">
+                <span class="text-9xl absolute z-0 text-slate-600">“</span>
+                <div class="  text-slate-300 p-5 text-lg z-10  italic ">
+                    <p>
+                        his incident caused us a lot of concern not only on the individual level but also on an organizational level. As an activist association, such impersonation and intrusion attempts to our important files and financial accounts will jeopardize the credibility and trustworthiness of our association within our society.
+                    </p>
+                    <p class="text-right text-xs">
+                        - Kelsang Dolma (General Secretary TWA)
+                    </p>   
+                </div>
+               
+                </blockquote>
+                <p>
+                    Responding to the threat, the TWA promptly alerted recipients of the malicious emails to report them and refrain from clicking on any links or attachments. Additionally, TibCERT proactively reached out to organizations that received similar emails, urging them to assess their systems and networks for potential compromise.
+                </p>
+            </div>
+
+
+        </section>
+
+        <section id="intro" class="snap-start w-full bg-slate-500  ">
+            <div class="flex space-between items-center w-11/12">
+                <div class="  overflow-hidden w-2/5 flex justify-end">
+                    <h1 class="titlePrev font-bold text-4xl text-white  p-20  inline-flex items-center"> Home <PrevIcon/> </h1>
+                </div>
+                <div class="w-1/5 h-40  rounded-lg  flex items-center justify-center">
+                    <a href="/"><HomeIcon/></a>
+                </div>
+                <div class=" overflow-hidden w-2/5  flex justify-start">
+                    
+                    <h1 class="titleNext font-bold text-4xl text-white text-center p-20  inline-flex items-center"><NextIcon/> The Tibet Movement Goes Online </h1>
+                </div>
+            </div>
+		</section>
+        <section id="pagination" class="snap-start w-lvw bg-slate-900 h-80">
+			
+		</section>
+
+	</div>
+    <script> 
+ 
+            import { gsap } from "gsap";
+         import  ScrollTrigger  from "gsap/ScrollTrigger";
+         gsap.registerPlugin(ScrollTrigger);
+          
+         const titlePrev = gsap.utils.toArray(".titlePrev");
+         titlePrev.forEach((title,i)=>{
+             gsap.from(title, {
+             scrollTrigger:{
+             trigger: title,
+             start: "top 100%",
+             end: "end 0%",
+             scrub: true,
+             markers: true
+             },
+             opacity: 0, x:-900,duration: 2,scale: 2 
+         })})
+     
+
+         const titleNext = gsap.utils.toArray(".titleNext");
+         titleNext.forEach((title,i)=>{
+             gsap.from(title, {
+             scrollTrigger:{
+             trigger: title,
+             start: "top 100%",
+             end: "end 0%",
+             scrub: true,
+             markers: true
+             },
+             opacity: 0, x:900,duration: 2,scale: 2 
+         })})
+     
+
+         // text fpr paragraph
+
+        
+   
+     </script>
+
+
+
+	
+</Default>
