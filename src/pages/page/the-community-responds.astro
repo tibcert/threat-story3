@@ -4,15 +4,15 @@ import HomeIcon from "../../icons/home-svgrepo-com.astro"
 import NextIcon from "../../icons/next-outline-svgrepo-com.astro"
 import PrevIcon from "../../icons/previous-outline-svgrepo-com.astro"
 
-
+const title = "The Community Responds"
 ---
-<Default title=" The Community Responds ">
+<Default title={title}>
 
-	<div class=" flex flex-col snap-mandatory h-full snap-y w-screen items-center bg-slate-900">
+	<div class=" flex flex-col snap-mandatory h-full snap-y w-screen items-center bg-slate-900 justify-around">
 
 		<section id="intro" class="snap-start w-lvw bg-slate-300 ">
 			<div class=" bg-black flex justify-between overflow-hidden">
-				<h1 class="titleLeft font-bold text-9xl text-white content-center p-20 text-center" transition:name="title5">The Community Responds</h1>
+				<h1 class="titleLeft font-bold text-9xl text-white content-center p-20 text-center" transition:name="title5">{title}</h1>
 			</div>
 		</section>
         <section class="content bg-slate-900 w-full text-3xl font-oswald">
@@ -113,9 +113,7 @@ import PrevIcon from "../../icons/previous-outline-svgrepo-com.astro"
                 </div>
             </div>
 		</section>
-        <section id="pagination" class="snap-start w-lvw bg-slate-900 h-80">
-			
-		</section>
+      
 
 	</div>
     <script> 

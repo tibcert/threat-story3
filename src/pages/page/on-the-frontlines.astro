@@ -4,14 +4,16 @@ import HomeIcon from "../../icons/home-svgrepo-com.astro"
 import NextIcon from "../../icons/next-outline-svgrepo-com.astro"
 import PrevIcon from "../../icons/previous-outline-svgrepo-com.astro"
 import VideoIcon from "../../icons/video.astro"
----
-<Default title="On The Frontlines">
 
-	<div class=" flex flex-col snap-mandatory h-full snap-y w-screen items-center bg-slate-900">
+const title = "On The Frontlines"
+---
+<Default title={title}>
+
+	<div class=" flex flex-col snap-mandatory h-full snap-y w-screen items-center bg-slate-900 justify-around">
 
 		<section id="intro" class="snap-start w-lvw bg-slate-300 ">
 			<div class=" bg-black flex justify-between overflow-hidden">
-				<h1 class="titleLeft font-bold text-9xl text-white content-center p-20 text-center" transition:name="title4">On The Frontlines</h1>
+				<h1 class="titleLeft font-bold text-9xl text-white content-center p-20 text-center" transition:name="title4">{title}</h1>
 			</div>
 		</section>
         
@@ -75,79 +77,13 @@ import VideoIcon from "../../icons/video.astro"
                 </div>
             </div>
 		</section>
-        <section id="pagination" class="snap-start w-lvw bg-slate-900 h-80">
-			
-		</section>
+ 
 	</div>
 
     
 
-<!-- Modal toggle -->
-<button  class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
-    Toggle modal
-  </button>
-  
-  <!-- Main modal -->
-  <div id="default-modal"  tabindex="-1" aria-hidden="true" class="hidden  overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-      <div class="relative p-4 w-full max-w-4xl max-h-full">
-          <!-- Modal content -->
-          <div class="relative  bg-slate-900 text-white  rounded-lg shadow ">
-              <!-- Modal header -->
-              <div class="flex items-centerjustify-between p-4 md:p-5 border-b rounded-t">
-                  <h2 class="text-4xl dark:text-white lowercase">
-                    Attempt to Silence Voice Of Tibet
-                  </h2>
-                  <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal">
-                      <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                      </svg>
-                      <span class="sr-only">Close modal</span>
-                  </button>
-              </div>
-              <!-- Modal body -->
-              <div class="p-4 md:p-5 space-y-4 lowercase font-normal">
-                <video  loop  controls class=" z-10 w-full min-w-full min-h-full max-w-none">
-                    <source
-                      src="https://tibcert.org/threat-story/images/paldon-vot.mp4"
-                      type="video/mp4"
-                    />
-                    Your browser does not support the video tag.
-                  </video>
-                  <p>
-                    Targeted digital espionage is not the only threat that Tibetan groups experience. Some digital attacks are aimed at silencing groups through attacks on websites.
-                  </p>
-                  <p>
-                    Voice of Tibet (VOT) is an independent radio station founded in 1996 with a mission to transmit news to Tibetans inside Tibet and around the world. Tibetan exile media like VOT present a clear threat to the censorship regime of China by providing independent news to Tibetans inside Tibet in both Tibetan and Mandarin. The VOT website is blocked in China and its transmissions online and over the air comes under constant threat.
-                  </p>
-                  <p>
-                    In 2011, VOT experienced massive disruptions of its website and radio signal. The website was taken offline by a Distributed Denial of Service (DDoS) attack overwhelming the website with too much traffic. This type of digital threat works by flooding a website with too many requests than it can handle resulting in poor performance or even complete crashes. It’s like shutting down a road by causing a massive traffic jam. At the same time as the DDoS attack, VOT’s shortwave radio transmissions into Tibet experienced persistent jamming attempts.
-                  </p>
-                  <p>
-                    For VOT what happened was clear, it had been attacked by agents of China in an attempt to silence the service. Oystein Alme, then the project manager at VOT, remarked: “We have noted a significant increase in jamming since 16 March, especially in the cities where the government has invested tens of millions of dollars to install antennae to prevent Tibetans from listening to us.”
-                  </p>
-                  <p>
-                    Tenzin Peldon, Chief Editor at VOT, emphasized the resilience of Tibetan media in the face of adversity, acknowledging the ongoing battle against Chinese censorship. Despite relentless attempts to disrupt their broadcasts,^17 Peldon affirmed VOT’s commitment to circumventing censorship through innovative programming strategies. However, the repercussions of these attacks extended beyond VOT, impacting the broader Tibetan community’s access to vital information and cultural preservation efforts.
-                  </p>
-                  <blockquote class="testamonial mx-auto w-4/5  text-white bg-slate-800  flex justify-between relative items-center">
-                    <span class="text-9xl absolute z-0 text-slate-600">“</span>
-                    <div class="  text-slate-300 p-5 text-lg z-10  italic ">
-                        <p>
-                            “When this kind of attack happens to us, it not only tarnishes the credibility of Tibet Times among our viewers but more importantly it jeopardizes their safety as well through potential device infections. Naturally it also creates a worrisome and annoying situation in our working process.”
-                        </p>
-                        <p class="text-right text-xs">
-                            - Tenzin Rabyang, Managing Director at Tibet Times
-                        </p>   
-                    </div>
-                   
-                    </blockquote>
-                    <p>
-                        Websites served as more than just information hubs; they were vital platforms for cultural preservation, community building, and political advocacy. Threats like DDoS attacks disrupt the flow of information and impede the community’s ability to raise awareness about human rights violations in Tibet. Other Tibetan media and civil society groups including Tibet Times, Phayul, and the Tibetan Center for Human Rights and Democracy (TCHRD), also faced similar assaults, highlighting the systematic targeting of Tibetan voices by malicious actors. As Tibetans continue to navigate the digital landscape, safeguarding their online platforms becomes paramount to upholding their right to free expression and preserving their cultural heritage.
-                    </p>
-              </div>
-             
-          </div>
-      </div>
-  </div>
+
+
   
     <script> 
  
