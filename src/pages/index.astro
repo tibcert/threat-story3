@@ -1,6 +1,7 @@
 ---
 import Default from "../layouts/Default.astro"
 import Hero from '../components/Heropage.astro'
+import ArrowOpen from '../icons/arrow-open.astro'
 
 ---
 <Default title="Home">	
@@ -28,11 +29,21 @@ import Hero from '../components/Heropage.astro'
 			<div class="h-1/2 bg-slate-900  flex justify-between">
 				<div class="h-full w-2/3">
 					<div class="text-slate-500  p-20 text-5xl md:text-4xl">
-						<p class="hover:text-slate-400 py-1">A Movement Under Surveillance</p>
-						<p class="hover:text-slate-400 py-1">Impersonation & Trust</p>
-						<p class="hover:text-slate-400 py-1">Poisoning The Well</p>
-						<p class="hover:text-slate-400 py-1">Attempt To Silence The Voice Of Tibet</p>
-						<p class="hover:text-slate-400 py-1">The Spy In Your Pocket</p>
+						<p class="hover:text-slate-400 hover:translate-x-2 transition duration-75">
+							<a href="page/on-the-frontline/a-movement-under-surveillance" class="flex items-center " transition:name="heading1"><ArrowOpen/>A Movement Under Surveillance</a>
+						</p>
+						<p class="hover:text-slate-400 hover:translate-x-2 transition duration-75"> 
+							<a href="page/on-the-frontline/impersonation-&-trust" class="flex items-center" transition:name="heading2"><ArrowOpen/>Impersonation & Trust</a>
+						</p>
+						<p class="hover:text-slate-400 hover:translate-x-2  transition duration-75">
+							<a href="page/on-the-frontline/poisoning-the-well" class="flex items-center" transition:name="heading3"><ArrowOpen/>Poisoning The Well</a>
+						</p>
+						<p class="hover:text-slate-400 hover:translate-x-2 transition duration-75">
+							<a href="page/on-the-frontline/attempt-to-silence-voice-of-tibet" class="flex items-center " transition:name="heading4"><ArrowOpen/>Attempt To Silence The Voice Of Tibet</a>
+						</p>
+						<p class="hover:text-slate-400 hover:translate-x-2 transition duration-75 ">
+							<a href="page/on-the-frontline/spy-in-your-pocket" class="flex items-center " transition:name="heading5"><ArrowOpen/>The Spy In Your Pocket</a>
+						</p>
 					</div>
 				</div>
 				<h1 class="titleRight font-bold text-9xl text-white content-center p-20 text-right" transition:name="title4"><a href="page/on-the-frontlines">On The Frontlines</a></h1>	
