@@ -1,0 +1,17 @@
+---
+import 'video.js/dist/video-js.css';
+// City
+import '@videojs/themes/dist/city/index.css';
+// Fantasy --------- in use now
+import '@videojs/themes/dist/fantasy/index.css';
+// Forest
+import '@videojs/themes/dist/forest/index.css';
+// Sea
+import '@videojs/themes/dist/sea/index.css';
+const {src} = Astro.props
+---
+
+<video  controls class="w-52 sm:w-52 md:w-full lg:w-full  h-56 sm:h-56 md:h-[800px] lg:h-[700px] video-js vjs-theme-fantasy" data-setup="{}">
+    <source src={src} type="video/mp4"/>
+    Your browser does not support the video tag.
+  </video>

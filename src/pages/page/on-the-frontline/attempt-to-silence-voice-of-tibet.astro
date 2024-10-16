@@ -3,6 +3,7 @@ import Default from "../../../layouts/Default.astro"
 import HomeIcon from "../../../icons/home-svgrepo-com.astro"
 import NextIcon from "../../../icons/next-outline-svgrepo-com.astro"
 import PrevIcon from "../../../icons/previous-outline-svgrepo-com.astro"
+import Video from "../../../components/Video.astro"
 
 const title = "Attempt To Silence The Voice Of Tibet"
 
@@ -19,13 +20,7 @@ const title = "Attempt To Silence The Voice Of Tibet"
 		</section>
         <section class="content bg-slate-900 w-full text-3xl font-oswald">
             <div class="mx-auto w-4/5 p-20 text-white" >
-                <video autoplay loop  controls class="w-auto">
-                <source
-                  src="https://tibcert.org/threat-story/images/paldon-vot.mp4"
-                  type="video/mp4"
-                />
-                Your browser does not support the video tag.
-              </video>
+               <Video src="https://tibcert.org/threat-story/images/paldon-vot.mp4"/>
             </div>
 
 
