@@ -1,18 +1,21 @@
 ---
 import Default from "../../layouts/Default.astro"
-import HomeIcon from "../../icons/home-svgrepo-com.astro"
-import NextIcon from "../../icons/next-outline-svgrepo-com.astro"
-import PrevIcon from "../../icons/previous-outline-svgrepo-com.astro"
+import Pagination from "../../components/Pagination.astro"
 
+const title ="The Tibet Movement Goes Online"
+const nextTitle = "Early Digital Threats"
+const nexturl = "early-digital-threats"
+const prevTitle = "Introduction"
+const prevurl = "introduction"
 
 ---
-<Default title="The Tibet Movement Goes Online">
+<Default title={"The Tibet Movement Goes Online"}>
 
 	<div class=" flex flex-col snap-mandatory h-full snap-y w-screen items-center bg-slate-900 justify-around">
 
 		<section id="intro" class="snap-start w-lvw bg-slate-300 ">
 			<div class=" bg-black flex justify-between overflow-hidden">
-				<h1 class="titleLeft font-bold text-9xl text-white content-center p-20 text-center" transition:name="title2">The Tibet Movement Goes Online</h1>
+				<h1 class="titleLeft font-bold text-9xl text-white content-center p-20 text-center" transition:name="title2">{title}</h1>
 			</div>
 		</section>
         <section class="content bg-slate-900 w-full text-3xl font-oswald text-slate-300">
@@ -90,73 +93,11 @@ import PrevIcon from "../../icons/previous-outline-svgrepo-com.astro"
 
         </section>
 
-        <section id="pagination" class="snap-start w-full bg-slate-500  ">
-            <div class="flex space-between items-center w-11/12">
-                <div class="  overflow-hidden w-2/5 flex justify-end">
-                    <h1 class="titlePrev font-bold text-4xl text-white  p-20  inline-flex items-center"> Home <PrevIcon/> </h1>
-                </div>
-                <div class="w-1/5 h-40  rounded-lg  flex items-center justify-center">
-                    <a href="/"><HomeIcon/></a>
-                </div>
-                <div class=" overflow-hidden w-2/5  flex justify-start">
-                    
-                    <h1 class="titleNext font-bold text-4xl text-white text-center p-20  inline-flex items-center"><NextIcon/> The Tibet Movement Goes Online </h1>
-                </div>
-            </div>
-		</section>
+        <Pagination next={nexturl} nextTitle={nextTitle} prev={prevurl} prevTitle={prevTitle} />
+
      
 
 	</div>
-    <script> 
- 
-        import { gsap } from "gsap";
-         import  {ScrollTrigger}  from "gsap/ScrollTrigger";
-         gsap.registerPlugin(ScrollTrigger);
-          
-         const titlePrev = gsap.utils.toArray(".titlePrev");
-         titlePrev.forEach((title,i)=>{
-             gsap.from(title, {
-             scrollTrigger:{
-             trigger: title,
-             start: "top 100%",
-             end: "end 0%",
-             scrub: true,
-             markers: false
-             },
-             opacity: 0, x:-900,duration: 2,scale: 2 
-         })})
-     
-
-         const titleNext = gsap.utils.toArray(".titleNext");
-         titleNext.forEach((title,i)=>{
-             gsap.from(title, {
-             scrollTrigger:{
-             trigger: title,
-             start: "top 100%",
-             end: "end 0%",
-             scrub: true,
-             markers: false
-             },
-             opacity: 0, x:900,duration: 2,scale: 2 
-         })})
-     
-
-         //tstimonials
-
-         const testamonial = gsap.utils.toArray(".testamonial");
-         testamonial.forEach((title,i)=>{
-        gsap.from(title, {
-        scrollTrigger:{
-        trigger: title,
-        start: "top 90%",
-        end: "end 60%",
-        scrub: true,
-        markers: true
-        },
-        opacity:0,x:1200,duration: 2,  height:0,
-    })})
-
-     </script>
 
 
 
