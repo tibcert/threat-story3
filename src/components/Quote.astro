@@ -1,0 +1,33 @@
+---
+const {img,person,title} = Astro.props;
+---
+<!-- 
+<blockquote class="testamonial mx-auto w-4/5  bg-slate-800 flex">
+    <span class="text-9xl absolute z-0 text-slate-600">“</span>
+    <div class="  text-slate-300 p-2 text-lg z-10  italic font-light ">
+       <slot/>
+    </div>
+    <div class="w-96  bg-red-300 ">
+        <img src={img} class="object-cover w-full  h-full" alt="" >
+    </div>
+    
+</blockquote>
+
+-->
+
+<figure class=" bg-slate-800 p-3 my-5 w-4/5 mx-auto relative">
+    
+    <blockquote>
+        <div class="testamonial text-xl font-light italic text-slate-300 dark:text-white z-10 relative">
+            <slot>
+        </div>
+        <span class="text-[12rem] absolute z-0 text-slate-700  top-16 left-0">“</span>
+    </blockquote>
+    <figcaption class="flex items-center mt-2 space-x-3 rtl:space-x-reverse ">
+        <img class="w-9 h-9 rounded-full" src={img} alt="profile picture">
+        <div class="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-300 dark:divide-gray-700">
+            <cite class="pe-3 font-medium text-gray-200 text-lg">{person}</cite>
+            <cite class="ps-3 text-sm text-gray-500 dark:text-gray-400">{title}</cite>
+        </div>
+    </figcaption>
+</figure>

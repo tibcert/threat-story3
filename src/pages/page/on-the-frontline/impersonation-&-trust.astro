@@ -1,11 +1,15 @@
 ---
 import Default from "../../../layouts/Default.astro"
-import HomeIcon from "../../../icons/home-svgrepo-com.astro"
-import NextIcon from "../../../icons/next-outline-svgrepo-com.astro"
-import PrevIcon from "../../../icons/previous-outline-svgrepo-com.astro"
 import Video from "../../../components/Video.astro"
+import Pagination from "../../../components/Pagination.astro"
+import Quote from "../../../components/Quote.astro"
 
 const title = "Impersonation & Trust"
+
+const nextTitle = "Poisoning The Well"
+const nextUrl = "/page/on-the-frontline/poisoning-the-well"
+const PrevTitle = "A movement Under Surveillance"
+const prevtUrl = "/page/on-the-frontline/a-movement-under-surveillance"
 
 ---
 <Default title={title}>
@@ -35,18 +39,13 @@ const title = "Impersonation & Trust"
                <p>
                 Kelsang Dolma, the General Secretary of the TWA recounts the impact the incident had on the group.
                </p>
-               <blockquote class="testamonial mx-auto w-4/5  text-white bg-slate-800  flex justify-between relative items-center">
-                <span class="text-9xl absolute z-0 text-slate-600">“</span>
-                <div class="  text-slate-300 p-5 text-lg z-10  italic ">
+
+
+                <Quote person="Kelsang Dolma" title="General Secretary TWA" img="/media/profile.jpg">
                     <p>
-                        his incident caused us a lot of concern not only on the individual level but also on an organizational level. As an activist association, such impersonation and intrusion attempts to our important files and financial accounts will jeopardize the credibility and trustworthiness of our association within our society.
+                        This incident caused us a lot of concern not only on the individual level but also on an organizational level. As an activist association, such impersonation and intrusion attempts to our important files and financial accounts will jeopardize the credibility and trustworthiness of our association within our society.
                     </p>
-                    <p class="text-right text-xs">
-                        - Kelsang Dolma (General Secretary TWA)
-                    </p>   
-                </div>
-               
-                </blockquote>
+                </Quote>
                 <p>
                     Responding to the threat, the TWA promptly alerted recipients of the malicious emails to report them and refrain from clicking on any links or attachments. Additionally, TibCERT proactively reached out to organizations that received similar emails, urging them to assess their systems and networks for potential compromise.
                 </p>
@@ -55,59 +54,12 @@ const title = "Impersonation & Trust"
 
         </section>
 
-        <section id="intro" class="snap-start w-full bg-slate-500  ">
-            <div class="flex space-between items-center w-11/12">
-                <div class="  overflow-hidden w-2/5 flex justify-end">
-                    <h1 class="titlePrev font-bold text-4xl text-white  p-20  inline-flex items-center"> Home <PrevIcon/> </h1>
-                </div>
-                <div class="w-1/5 h-40  rounded-lg  flex items-center justify-center">
-                    <a href="/"><HomeIcon/></a>
-                </div>
-                <div class=" overflow-hidden w-2/5  flex justify-start">
-                    
-                    <h1 class="titleNext font-bold text-4xl text-white text-center p-20  inline-flex items-center"><NextIcon/> The Tibet Movement Goes Online </h1>
-                </div>
-            </div>
-		</section>
+        <Pagination prevTitle={PrevTitle} prev={prevtUrl} nextTitle={nextTitle} next={nextUrl} home="/">
+
 
 
 	</div>
-    <script> 
- 
-            import { gsap } from "gsap";
-         import  ScrollTrigger  from "gsap/ScrollTrigger";
-         gsap.registerPlugin(ScrollTrigger);
-          
-         const titlePrev = gsap.utils.toArray(".titlePrev");
-         titlePrev.forEach((title,i)=>{
-             gsap.from(title, {
-             scrollTrigger:{
-             trigger: title,
-             start: "top 100%",
-             end: "end 0%",
-             scrub: true,
-             markers: true
-             },
-             opacity: 0, x:-900,duration: 2,scale: 2 
-         })})
-     
 
-         const titleNext = gsap.utils.toArray(".titleNext");
-         titleNext.forEach((title,i)=>{
-             gsap.from(title, {
-             scrollTrigger:{
-             trigger: title,
-             start: "top 100%",
-             end: "end 0%",
-             scrub: true,
-             markers: true
-             },
-             opacity: 0, x:900,duration: 2,scale: 2 
-         })})
-     
-         // text fpr paragraph
-
-     </script>
 
 
 

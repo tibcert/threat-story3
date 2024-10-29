@@ -1,10 +1,14 @@
 ---
 import Default from "../../../layouts/Default.astro"
-import HomeIcon from "../../../icons/home-svgrepo-com.astro"
-import NextIcon from "../../../icons/next-outline-svgrepo-com.astro"
-import PrevIcon from "../../../icons/previous-outline-svgrepo-com.astro"
+import Quote from "../../../components/Quote.astro"
+import Pagination from "../../../components/Pagination.astro"
 
 const title = "Poisoning The Well"
+
+const PrevTitle = "Impersonation & Trust"
+const prevtUrl = "/page/on-the-frontline/impersonation-&-trust"
+const nextTitle = "Attempt To Silence The Voice Of Tibet"
+const nextUrl = "/page/on-the-frontline/attempt-to-silence-voice-of-tibet"
 
 ---
 <Default title={title}>
@@ -29,18 +33,12 @@ const title = "Poisoning The Well"
               <p>
                 Tibet Times started as a Tibetan-language newspaper before evolving into a comprehensive media outlet, offering a Tibetan-language website and a mobile app to disseminate accurate information and breaking news about Tibet. In 2013, a scan for malicious ;omls on the TibetTimes website revealed a disturbing discovery: visitors to the site unwittingly opened a malicious domain, potentially exposing their devices to malware.
               </p>
-               <blockquote class="testamonial mx-auto w-4/5  text-white bg-slate-800  flex justify-between relative items-center">
-                <span class="text-9xl absolute z-0 text-slate-600">“</span>
-                <div class="  text-slate-300 p-5 text-lg z-10  italic ">
+
+                <Quote person="Tenzin Rabyang" title="Managing Director at Tibet Times" img="/media/profile.jpg">
                     <p>
                         “When this kind of attack happens to us, it not only tarnishes the credibility of Tibet Times among our viewers but more importantly it jeopardizes their safety as well through potential device infections. Naturally it also creates a worrisome and annoying situation in our working process.”
                     </p>
-                    <p class="text-right text-xs">
-                        - Tenzin Rabyang, Managing Director at Tibet Times
-                    </p>   
-                </div>
-               
-                </blockquote>
+                </Quote>
                 <p>
                     Websites like TibetTimes that publish news on the human rights violations occurring inside Tibet, covering in TIbetan, English and Chinese, attracting visitors from Tibet and worldwide. However, these attacks not only harm the credibility and integrity of TibetTimes but also endanger website visitors. For individuals from Tibet, such attacks could have serious consequences, if found accessing or sharing content deemed sensitive by the PRC, individuals could face harassment, surveillance, or even legal repercussions.
                 </p>
@@ -48,63 +46,13 @@ const title = "Poisoning The Well"
 
 
         </section>
+        <Pagination prevTitle={PrevTitle} prev={prevtUrl} nextTitle={nextTitle} next={nextUrl} home="/">
 
-        <section id="intro" class="snap-start w-full bg-slate-500  justify-around">
-            <div class="flex space-between items-center w-11/12">
-                <div class="  overflow-hidden w-2/5 flex justify-end">
-                    <h1 class="titlePrev font-bold text-4xl text-white  p-20  inline-flex items-center"> Home <PrevIcon/> </h1>
-                </div>
-                <div class="w-1/5 h-40  rounded-lg  flex items-center justify-center">
-                    <a href="/"><HomeIcon/></a>
-                </div>
-                <div class=" overflow-hidden w-2/5  flex justify-start">
-                    
-                    <h1 class="titleNext font-bold text-4xl text-white text-center p-20  inline-flex items-center"><NextIcon/> The Tibet Movement Goes Online </h1>
-                </div>
-            </div>
-		</section>
+
         
 
 	</div>
-    <script> 
- 
-            import { gsap } from "gsap";
-         import  ScrollTrigger  from "gsap/ScrollTrigger";
-         gsap.registerPlugin(ScrollTrigger);
-          
-         const titlePrev = gsap.utils.toArray(".titlePrev");
-         titlePrev.forEach((title,i)=>{
-             gsap.from(title, {
-             scrollTrigger:{
-             trigger: title,
-             start: "top 100%",
-             end: "end 0%",
-             scrub: true,
-             markers: true
-             },
-             opacity: 0, x:-900,duration: 2,scale: 2 
-         })})
-     
 
-         const titleNext = gsap.utils.toArray(".titleNext");
-         titleNext.forEach((title,i)=>{
-             gsap.from(title, {
-             scrollTrigger:{
-             trigger: title,
-             start: "top 100%",
-             end: "end 0%",
-             scrub: true,
-             markers: true
-             },
-             opacity: 0, x:900,duration: 2,scale: 2 
-         })})
-     
-
-         // text fpr paragraph
-
-        
-   
-     </script>
 
 
 

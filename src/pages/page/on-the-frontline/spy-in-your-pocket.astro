@@ -1,10 +1,14 @@
 ---
+import Pagination from "../../../components/Pagination.astro"
 import Default from "../../../layouts/Default.astro"
-import HomeIcon from "../../../icons/home-svgrepo-com.astro"
-import NextIcon from "../../../icons/next-outline-svgrepo-com.astro"
-import PrevIcon from "../../../icons/previous-outline-svgrepo-com.astro"
+
 
 const title = "Spy In Your Pocket"
+
+const PrevTitle = "Attempt To Silence The Voice Of Tibet"
+const prevtUrl = "/page/on-the-frontline/attempt-to-silence-voice-of-tibet"
+const nextTitle = ""
+const nextUrl = ""
 
 ---
 <Default title={title}>
@@ -28,65 +32,14 @@ const title = "Spy In Your Pocket"
             
         </section>
 
-        <section id="intro" class="snap-start w-full bg-slate-500  ">
-            <div class="flex space-between items-center w-11/12">
-                <div class="  overflow-hidden w-2/5 flex justify-end">
-                    <h1 class="titlePrev font-bold text-4xl text-white  p-20  inline-flex items-center"> Home <PrevIcon/> </h1>
-                </div>
-                <div class="w-1/5 h-40  rounded-lg  flex items-center justify-center">
-                    <a href="/"><HomeIcon/></a>
-                </div>
-                <div class=" overflow-hidden w-2/5  flex justify-start">
-                    
-                    <h1 class="titleNext font-bold text-4xl text-white text-center p-20  inline-flex items-center"><NextIcon/> The Tibet Movement Goes Online </h1>
-                </div>
-            </div>
-		</section>
-        <section id="pagination" class="snap-start w-lvw bg-slate-900 h-80">
-			
-		</section>
-      
+
+
+    
+        <Pagination prevTitle={PrevTitle} prev={prevtUrl} nextTitle={nextTitle} next={nextUrl} home="/">
+
 
 	</div>
-    <script> 
- 
-            import { gsap } from "gsap";
-         import  ScrollTrigger  from "gsap/ScrollTrigger";
-         gsap.registerPlugin(ScrollTrigger);
-          
-         const titlePrev = gsap.utils.toArray(".titlePrev");
-         titlePrev.forEach((title,i)=>{
-             gsap.from(title, {
-             scrollTrigger:{
-             trigger: title,
-             start: "top 100%",
-             end: "end 0%",
-             scrub: true,
-             markers: false
-             },
-             opacity: 0, x:-900,duration: 2,scale: 2 
-         })})
-     
 
-         const titleNext = gsap.utils.toArray(".titleNext");
-         titleNext.forEach((title,i)=>{
-             gsap.from(title, {
-             scrollTrigger:{
-             trigger: title,
-             start: "top 100%",
-             end: "end 0%",
-             scrub: true,
-             markers: false
-             },
-             opacity: 0, x:900,duration: 2,scale: 2 
-         })})
-     
-
-
-  
-        
-   
-     </script>
 
 
 

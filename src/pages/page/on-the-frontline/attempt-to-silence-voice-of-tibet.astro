@@ -1,11 +1,15 @@
 ---
 import Default from "../../../layouts/Default.astro"
-import HomeIcon from "../../../icons/home-svgrepo-com.astro"
-import NextIcon from "../../../icons/next-outline-svgrepo-com.astro"
-import PrevIcon from "../../../icons/previous-outline-svgrepo-com.astro"
 import Video from "../../../components/Video.astro"
+import Pagination from "../../../components/Pagination.astro"
+import Quote from "../../../components/Quote.astro"
 
 const title = "Attempt To Silence The Voice Of Tibet"
+
+const PrevTitle = "Poisoning The Well"
+const prevtUrl = "/page/on-the-frontline/poisoning-the-well"
+const nextTitle = "The Spy In Your Pocket"
+const nextUrl = "/page/on-the-frontline/spy-in-your-pocket"
 
 ---
 <Default title={title}>
@@ -22,94 +26,33 @@ const title = "Attempt To Silence The Voice Of Tibet"
             <div class="mx-auto w-4/5 p-20 text-white" >
                <Video src="https://tibcert.org/threat-story/images/paldon-vot.mp4"/>
             </div>
-
-
             <div class="mx-auto w-4/5 p-10 text-white"> 
-               <p>
-                Targeted malware is not only delivered through emails or messages. It can also spread through the community by infecting trusted websites. Like a village well, websites for Tibetan media and organizations serve as vital resources for the community. If you poison the well, you poison the village. A “watering hole attack” describes this type of action online. Attackers get unauthorized access to websites and infect them with malware. When visitors visit the website they are at risk of their computer being infected by the malware and giving access to the attackers. The modus operandi of these attacks is particularly insidious, as compromised websites automatically download malware onto visitors’ devices without their knowledge. This method bypasses the need for attackers to target individuals individually, streamlining the process, and maximizing the impact.
-               </p>
-              <p>
-                Many Tibetan websites have experienced watering hole attacks including media sites and official websites for key organizations such as the Central Tibetan Administration and the Offices of His Holiness the Dalai Lama.9 Community resource websites have also fallen victim including Tibetan Homes Foundation, and a Tibetan school in the diaspora.
-              </p>
-              <p>
-                Tibet Times started as a Tibetan-language newspaper before evolving into a comprehensive media outlet, offering a Tibetan-language website and a mobile app to disseminate accurate information and breaking news about Tibet. In 2013, a scan for malicious ;omls on the TibetTimes website revealed a disturbing discovery: visitors to the site unwittingly opened a malicious domain, potentially exposing their devices to malware.
-              </p>
-               <blockquote class="testamonial mx-auto w-4/5  text-white bg-slate-800  flex justify-between relative items-center">
-                <span class="text-9xl absolute z-0 text-slate-600">“</span>
-                <div class="  text-slate-300 p-5 text-lg z-10  italic ">
+               <p>Targeted digital espionage is not the only threat that Tibetan groups experience. Some digital attacks are aimed at silencing groups through attacks on websites.</p>
+              <p>Voice of Tibet (VOT) is an independent radio station founded in 1996 with a mission to transmit news to Tibetans inside Tibet and around the world. Tibetan exile media like VOT present a clear threat to the censorship regime of China by providing independent news to Tibetans inside Tibet in both Tibetan and Mandarin. The VOT website is blocked in China and its transmissions online and over the air comes under constant threat.</p>
+                <p>In 2011, VOT experienced massive disruptions of its website and radio signal. The website was taken offline by a Distributed Denial of Service (DDoS) attack overwhelming the website with too much traffic. This type of digital threat works by flooding a website with too many requests than it can handle resulting in poor performance or even complete crashes. It’s like shutting down a road by causing a massive traffic jam. At the same time as the DDoS attack, VOT’s shortwave radio transmissions into Tibet experienced persistent jamming attempts.</p>
+                <p>For VOT what happened was clear, it had been attacked by agents of China in an attempt to silence the service. Oystein Alme, then the project manager at VOT, remarked: “We have noted a significant increase in jamming since 16 March, especially in the cities where the government has invested tens of millions of dollars to install antennae to prevent Tibetans from listening to us.</p>
+                <p>Tenzin Peldon, Chief Editor at VOT, emphasized the resilience of Tibetan media in the face of adversity, acknowledging the ongoing battle against Chinese censorship. Despite relentless attempts to disrupt their broadcasts,^17 Peldon affirmed VOT’s commitment to circumventing censorship through innovative programming strategies. However, the repercussions of these attacks extended beyond VOT, impacting the broader Tibetan community’s access to vital information and cultural preservation efforts.^18</p>
+                <Quote person="Peldon la" title="Chief Editor at VOT" img="/media/tenzin-paldon.jpg">
                     <p>
-                        “When this kind of attack happens to us, it not only tarnishes the credibility of Tibet Times among our viewers but more importantly it jeopardizes their safety as well through potential device infections. Naturally it also creates a worrisome and annoying situation in our working process.”
+                        “We were not able to reach our audience on time since our job was to get the news and information about Tibet to the Tibetans inside Tibet right on time. We couldn’t do that for several days because of the attack and I felt that all of our efforts have gone wasted.”
                     </p>
-                    <p class="text-right text-xs">
-                        - Tenzin Rabyang, Managing Director at Tibet Times
-                    </p>   
-                </div>
-               
-                </blockquote>
+                </Quote>
                 <p>
-                    Websites like TibetTimes that publish news on the human rights violations occurring inside Tibet, covering in TIbetan, English and Chinese, attracting visitors from Tibet and worldwide. However, these attacks not only harm the credibility and integrity of TibetTimes but also endanger website visitors. For individuals from Tibet, such attacks could have serious consequences, if found accessing or sharing content deemed sensitive by the PRC, individuals could face harassment, surveillance, or even legal repercussions.
+                    Websites served as more than just information hubs; they were vital platforms for cultural preservation, community building, and political advocacy. 
+                    Threats like DDoS attacks disrupt the flow of information and impede the community’s ability to raise awareness about human rights violations in Tibet. 
+                    Other Tibetan media and civil society groups including Tibet Times, Phayul, and the Tibetan Center for Human Rights and Democracy (TCHRD), also faced similar assaults, 
+                    highlighting the systematic targeting of Tibetan voices by malicious actors. As Tibetans continue to navigate the digital landscape,
+                     safeguarding their online platforms becomes paramount to upholding their right to free expression and preserving their cultural heritage.
                 </p>
             </div>
 
 
         </section>
 
-        <section id="intro" class="snap-start w-full bg-slate-500  ">
-            <div class="flex space-between items-center w-11/12">
-                <div class="  overflow-hidden w-2/5 flex justify-end">
-                    <h1 class="titlePrev font-bold text-4xl text-white  p-20  inline-flex items-center"> Home <PrevIcon/> </h1>
-                </div>
-                <div class="w-1/5 h-40  rounded-lg  flex items-center justify-center">
-                    <a href="/"><HomeIcon/></a>
-                </div>
-                <div class=" overflow-hidden w-2/5  flex justify-start">
-                    
-                    <h1 class="titleNext font-bold text-4xl text-white text-center p-20  inline-flex items-center"><NextIcon/> The Tibet Movement Goes Online </h1>
-                </div>
-            </div>
-		</section>
-    
 
 	</div>
-    <script> 
- 
-            import { gsap } from "gsap";
-         import  ScrollTrigger  from "gsap/ScrollTrigger";
-         gsap.registerPlugin(ScrollTrigger);
-          
-         const titlePrev = gsap.utils.toArray(".titlePrev");
-         titlePrev.forEach((title,i)=>{
-             gsap.from(title, {
-             scrollTrigger:{
-             trigger: title,
-             start: "top 100%",
-             end: "end 0%",
-             scrub: true,
-             markers: false
-             },
-             opacity: 0, x:-900,duration: 2,scale: 2 
-         })})
-     
+    <Pagination prevTitle={PrevTitle} prev={prevtUrl} nextTitle={nextTitle} next={nextUrl} home="/">
 
-         const titleNext = gsap.utils.toArray(".titleNext");
-         titleNext.forEach((title,i)=>{
-             gsap.from(title, {
-             scrollTrigger:{
-             trigger: title,
-             start: "top 100%",
-             end: "end 0%",
-             scrub: true,
-             markers: false
-             },
-             opacity: 0, x:900,duration: 2,scale: 2 
-         })})
-     
-
-
-  
-        
-   
-     </script>
 
 
 
