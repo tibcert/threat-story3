@@ -1,0 +1,53 @@
+---
+import BannerLeftText from "../../../../components/BannerLeftText.astro"
+import BannerRightText from "../../../../components/BannerRightText.astro"
+import Pagination from "../../../../components/Pagination.astro"
+import Default from "../../../../layouts/Default.astro"
+import HomeIcon from "../../../../icons/home-svgrepo-com.astro"
+
+const title ="Spying During Pivotal Moments For The Tibet"
+const nextTitle = ""
+const nexturl = ""
+const prevTitle = ""
+const prevurl = ""
+
+---
+<Default title={title}>
+
+	<div class=" flex flex-col snap-mandatory h-full snap-y w-screen items-center bg-slate-900 justify-around">
+
+		<section id="intro" class="snap-start w-lvw bg-slate-300 ">
+			<div class=" bg-black flex flex-col justify-between overflow-hidden">
+                <p class="text-slate-400 text-2xl text-center p-5 m-auto">
+                    <a href="/">Home</a><span class="px-2">/</span><a href="/page/voices-from-the-community/"> Voices From The Community</a>
+                </p>   
+				<h1 class="titleLeft font-bold text-9xl text-white content-center p-20 text-center" transition:name="title2">{title}</h1>
+			</div>
+		</section>
+        <section class="content bg-slate-900 w-full text-3xl font-oswald text-slate-300">
+        <div class="mx-auto w-4/5 p-10">
+            <p>The first line of attack in most digital espionage that uses targeted malware is luring targets to perform some kind of action, usually opening a malicious attachment or link. The social engineering tactics used in these intrusion attempts are often highly sophisticated and show a knowledge of the activities and network of the target. This level of sophistication speaks to the effort being put into the espionage campaigns and the amount of information the adversaries already have on their targets. </p>
+            <p>The stories we collected are from individuals involved in Tibet advocacy key moments in the history of the Tibetan freedom movement. The mirroring of these major events with spikes in online attacks targeting the community reflects how closely the PRC monitors the community and the persistence of digital threats over two decades.</p>
+        </div>   
+
+        </section>
+        <BannerLeftText title="Surveillance, Harassment, And The 2008 Beijing Olympics" link="/page/voices-from-the-community/spying/surveillance-harassment-&-2008-beihing-olympics" img="/images/bw.jpg ">
+
+        </BannerLeftText>
+		
+        <BannerRightText title="Spying And Self Immolations In Tibet" link="/page/voices-from-the-community/spying/spying-and-self-immolation-in-tibet/" img="/images/bw.jpg">
+        </BannerRightText>
+        <BannerLeftText title="Spying On The Tibetan Movement During Covid" link="/page/voices-from-the-community/spying/spying-on-the-tibetan-movement-during-covid" img="/images/bw.jpg ">
+
+        </BannerLeftText>
+
+        <Pagination next={nexturl} nextTitle={nextTitle} prev={prevurl} prevTitle={prevTitle} />
+
+     
+
+	</div>
+
+
+
+	
+</Default>

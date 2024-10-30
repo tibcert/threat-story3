@@ -1,7 +1,10 @@
 ---
-import Default from "../../layouts/Default.astro"
-import Pagination from "../../components/Pagination.astro"
-import Quote from "../../components/Quote.astro"
+import Pagination from "../../../components/Pagination.astro"
+import Quote from "../../../components/Quote.astro"
+import Video from "../../../components/Video.astro"
+import Default from "../../../layouts/Default.astro"
+
+
 
 const title ="The Tibet Movement Goes Online"
 const nextTitle = "Early Digital Threats"
@@ -15,7 +18,10 @@ const prevurl = "/page/introduction"
 	<div class=" flex flex-col snap-mandatory h-full snap-y w-screen items-center bg-slate-900 justify-around">
 
 		<section id="intro" class="snap-start w-lvw bg-slate-300 ">
-			<div class=" bg-black flex justify-between overflow-hidden">
+			<div class=" bg-black flex flex-col justify-between overflow-hidden">
+                <p class="text-slate-400 text-2xl text-center p-5 m-auto">
+                    <a href="/">Home</a><span class="px-2">/</span><a href="/page/background/">Background</a>
+                </p> 
 				<h1 class="titleLeft font-bold text-9xl text-white content-center p-20 text-center" transition:name="title2">{title}</h1>
 			</div>
 		</section>
@@ -72,6 +78,8 @@ const prevurl = "/page/introduction"
                 <p>
                     Information technology is a double-edged sword for the Tibetan community. On one hand, it has significantly contributed to strengthening the Tibetan movement, fostering greater communication opportunities, and promoting awareness of Tibetan culture and heritage on a global scale. However, alongside these advancements, the community has become increasingly vulnerable to online threats orchestrated by groups affiliated with the PRC. Exploiting the community’s relatively limited information security capacity, these groups infiltrate communication networks, surveil individuals and organizations, and pose significant challenges to the integrity and security of the Tibetan movement.
                 </p>
+
+                <Video src="https://tibcert.org/threat-story/images/dan-video.mp4"/>
         </div>
 
         </section>

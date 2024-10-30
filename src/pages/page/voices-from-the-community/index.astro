@@ -1,0 +1,57 @@
+---
+import Pagination from "../../../components/Pagination.astro"
+import Default from "../../../layouts/Default.astro"
+
+const title ="Voices From The Community"
+const nextTitle = "Early Digital Threats"
+const nexturl = "/page/early-digital-threats"
+const prevTitle = "Introduction"
+const prevurl = "/page/introduction"
+
+---
+<Default title={title}>
+
+	<div class=" flex flex-col snap-mandatory h-full snap-y w-screen items-center bg-slate-900 justify-around">
+
+		<section id="intro" class="snap-start w-lvw bg-slate-300 ">
+			<div class=" bg-black flex flex-col justify-between overflow-hidden">
+                <p class="text-slate-400 text-2xl text-center p-5  m-auto">
+                    <a href="/">Home</a><span class="px-2">/</span><a href="/page/voices-from-the-community/"> Voices From The Community</a>
+                </p>
+				<h1 class="titleLeft font-bold text-9xl text-white content-center p-20 text-center" transition:name="title2">{title}</h1>
+			</div>
+		</section>
+        <section class="content bg-slate-900 w-full text-3xl font-oswald text-slate-300">
+        <div class="mx-auto w-4/5 p-10">
+            <p>While incidents of digital espionage against the Tibetan community are well documented in threat intelligence reports, the focus is almost always on the technical aspects alone. These reports provide little analysis or understanding of the social and political context in which these threats occur. Without this context, it is not possible to understand the harm of digital espionage to those it targets. 
+            </p>  
+            <p>Only paying attention to the malware and other technical tricks being used in digital espionage is like investigating a shooting but only analyzing the gun. When gun crime is investigated, the forensic details of the bullet may help connect similar attacks and maybe even trace it to the shooter, but if the damage against the victim and the context in which the attack happened is ignored the nature and impact of the crime cannot be properly assessed. Digital espionage is no different. A full understanding of digital espionage requires a wider and deeper view into the issue. </p>
+            <p>We interviewed members of the Tibet movement who have been targeted by digital espionage to document the history and impact of digital threats against the Tibet movement, as well as the remarkable digital resilience built by the community in response. </p>
+            <p>We organized the stories we collected from the community into two sections.</p>
+            <p>
+                The first section shares stories from Tibet leaders and groups that have come under digital surveillance during key moments for the Tibetan movement including the 2008 Beijing Olympics, the wave of self-immolations in the mid 2000s, and the COVID-19 pandemic.
+            </p>
+            <p>The second section describes different forms of digital threats that Tibet supporters have experienced from malicious email campaigns that impersonate Tibetan groups, espionage campaigns that compromised Tibetan websites and use them to serve spyware to visitors, attacks aimed at censorship rather than surveillance, and finally digital espionage targeting phones</p>
+            <p>Together these sections show the history and evolution of digital espionage against the Tibetan community from the perspective of the community.</p>
+        </div>   
+        </section>
+        
+        <section class="content bg-slate-900 w-full text-3xl font-oswald text-slate-300 flex">
+            <div class="w-full h-96 bg-slate-950 flex items-center justify-center">
+                <a href="/page/voices-from-the-community/spying"><h1 class="text-4xl uppercase font-medium">Spying During Pivotal Moments For The Tibet Movement</h1></a>
+            </div>
+            <div class="w-full h-96 bg-slate-500 flex items-center justify-center">
+                <a href="/page/voices-from-the-community/a-spectrum-of-threats"><h1 class="text-4xl uppercase font-medium">A Spectrum Of Threats</h1></a>
+            </div>
+      
+        </section>
+        <Pagination next={nexturl} nextTitle={nextTitle} prev={prevurl} prevTitle={prevTitle} />
+
+     
+
+	</div>
+
+
+
+	
+</Default>

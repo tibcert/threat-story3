@@ -1,0 +1,46 @@
+---
+import BannerLeftText from "../../../components/BannerLeftText.astro"
+import BannerRightText from "../../../components/BannerRightText.astro"
+import Pagination from "../../../components/Pagination.astro"
+import Default from "../../../layouts/Default.astro"
+
+
+
+
+const title ="Background"
+const nextTitle = ""
+const nexturl = ""
+const prevTitle = ""
+const prevurl = ""
+
+---
+<Default title={title}>
+
+	<div class=" flex flex-col snap-mandatory h-full snap-y w-screen items-center bg-slate-900 justify-around">
+
+		<section id="intro" class="snap-start w-lvw bg-slate-300 ">
+			<div class=" bg-black  justify-between overflow-hidden flex flex-col items-center">
+                <p class="text-slate-400 text-2xl text-center p-5 m-auto">
+                    <a href="/">Home</a><span class="px-2">/</span>
+                </p>   
+				<h1 class="titleLeft font-bold text-9xl text-white content-center  pt-20 text-center" transition:name="title2">{title}</h1>
+                <p class="text-white text-center text-3xl pb-20 w-1/2 justify-center">  This section provides an overview of the digital threats Tibetan organizations have experienced, which demonstrates how the threats evolve and adapt overtime. </p>
+			</div>
+		</section>
+
+        <BannerRightText title="The Tibet Movement Goes Online" link="/page/background/the-tibet-movement-goes-online/" img="/images/bw.jpg">
+        </BannerRightText>
+        <BannerLeftText title="Early Digital Threats Against The Community" link="/page/background/early-digital-threats/" img="/images/bw.jpg ">
+
+        </BannerLeftText>
+
+        <Pagination next={nexturl} nextTitle={nextTitle} prev={prevurl} prevTitle={prevTitle} />
+
+     
+
+	</div>
+
+
+
+	
+</Default>

@@ -1,8 +1,10 @@
 ---
-import Default from "../../../layouts/Default.astro"
-import Video from "../../../components/Video.astro"
-import Pagination from "../../../components/Pagination.astro"
-import Quote from "../../../components/Quote.astro"
+import Pagination from "../../../../components/Pagination.astro"
+import Quote from "../../../../components/Quote.astro"
+import Video from "../../../../components/Video.astro"
+import Default from "../../../../layouts/Default.astro"
+
+
 
 const title = "Impersonation & Trust"
 
@@ -18,14 +20,18 @@ const prevtUrl = "/page/on-the-frontline/a-movement-under-surveillance"
 
 		<section id="intro" class="snap-start w-lvw bg-slate-300 ">
 			<div class=" bg-black flex flex-col justify-between overflow-hidden">
-                <a href="/page/on-the-frontlines"><p class="text-slate-400 text-5xl text-center p-5 bg-slate-800 w-80 m-auto">On The Frontline</p></a>
+                    <p class="text-slate-400 text-2xl text-center p-5  m-auto">
+                        <a href="/">Home</a>
+                        <span class="px-2">/</span>
+                        <a href="/page/voices-from-the-community/">Voices From The Community</a>
+                        <span class="px-2">/</span>
+                        <a href="/page/voices-from-the-community/a-spectrum-of-threats/"> A Spectrum of Threat</a>
+                    </p>
 				<h1 class="titleLeft font-bold text-9xl text-white content-center p-20 text-center" transition:name="heading2">{title}</h1>
 			</div>
 		</section>
         <section class="content bg-slate-900 w-full text-3xl font-oswald">
-            <div class="mx-auto w-4/5 p-20 text-white">
-             <Video src="https://tibcert.org/threat-story/images/lhadon.mp4"/>
-            </div>
+            
             <div class="mx-auto w-4/5 p-10 text-white">
                 <p>
                     Digital espionage against the community often impersonates known people and groups by sending messages and emails that appear to come from trusted sources. Through these impersonations malware can spread through the community and undermine the credibility of Tibetan groups.

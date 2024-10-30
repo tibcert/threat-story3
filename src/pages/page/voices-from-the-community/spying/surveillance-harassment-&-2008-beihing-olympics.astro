@@ -1,0 +1,61 @@
+---
+import BannerLeftText from "../../../../components/BannerLeftText.astro"
+import BannerRightText from "../../../../components/BannerRightText.astro"
+import Pagination from "../../../../components/Pagination.astro"
+import Quote from "../../../../components/Quote.astro"
+import Default from "../../../../layouts/Default.astro"
+
+const title ="Surveillance, Harassment, And The 2008 Beijing Olympics"
+const nextTitle = ""
+const nexturl = ""
+const prevTitle = ""
+const prevurl = ""
+
+---
+<Default title={title}>
+
+	<div class=" flex flex-col snap-mandatory h-full snap-y w-screen items-center bg-slate-900 justify-around">
+
+		<section id="intro" class="snap-start w-lvw bg-slate-300 ">
+			<div class=" bg-black flex flex-col justify-between overflow-hidden">
+                <p class="text-slate-400 text-2xl text-center p-5  m-auto">
+                    <a href="/">Home</a>
+                    <span class="px-2">/</span>
+                    <a href="/page/voices-from-the-community/">Voices From The Community</a>
+                    <span class="px-2">/</span>
+                    <a href="/page/voices-from-the-community/spying/"> Spying During The Pivotal Moments For THe Tibet Movement</a>
+                </p>
+                <h1 class="titleLeft font-bold text-9xl text-white content-center p-20 text-center" transition:name="title2">{title}</h1>
+			</div>
+		</section>
+        <section class="content bg-slate-900 w-full text-3xl font-oswald text-slate-300">
+        <div class="mx-auto w-4/5 p-10">
+            <p>
+                In 2008, Beijing played host to the Summer Olympics. The mega event was a major publicity moment for the government of China and accordingly was also a crucial moment to bring attention to its perpetration of human rights abuses against Tibetans and other targeted communities. 
+               </p>
+               <p>A wave of unprecedented protests broke out across Tibet against China’s occupation and unceasing violations of Tibetans’ basic rights and freedoms. During this uprising, many Tibetans and non-Tibetan allies working with Tibet Support Groups conducted advocacy work and solidarity protest actions including disrupting the Olympic Torch routes as well as highlighting the dire situation inside Tibet on international media platforms and to global decision makers. 
+                Kate Woznow was part of this advocacy effort as Campaign Director of Students for a Free Tibet. From Bangkok, Thailand, Kate coordinated a flurry of activities including organizing protests and managing media strategies. During this period Skype was a key communications tool for Kate to reach activists across the world from Beijing, London, New York and beyond. These communications were often highly sensitive and Kate and her colleagues took precautions such as using code names to mask their identity. Despite these efforts Kate soon found herself a target of surveillance and harassment.
+                </p>
+                <p>
+                    In August 2008, as the Olympics games opened Kate began to receive suspicious Skype messages. The person on the other end addressed her by the code name she has not used publicly and also knew the code name for Kate’s colleague Lhadon Tethong, Executive Director of Students for a Free Tibet. The messages were written in a tone to suggest that the person already knew Kate. They asked if she was in Hong Kong and asked scoping questions about what she was doing there and if she was interested in business opportunities. The person  seemed to be trying to seek out her location and asking about Hong Kong was noteworthy as she had been based there briefly in 2007 while helping to coordinate media coverage of a Beijing-based protest against the Government of China’s decision to summit the Tibetan side of Mt. Everest with the Olympic torch. 
+                </p>
+                <Quote person="Kate Woznow" title="Director Of Tibet Action Institute" img="/media/Kate.jpg">
+                    <p>It was unnerving to have people on my Skype who knew my code name and who seemed determined to seek out my location. They were clearly doing this to intimidate me and others involved in the protests and to let us know that they knew were …</p>
+                    <p>There was a thuggishness to the tone of the messages that reminded me of other in-person situations I’d faced with Chinese authorities. It was evident they were transferring their tactics of intimidation online and trying to shut us down by revealing that they could infiltrate our online spaces and potentially disrupt our advocacy work. I recall thinking how unbearable it must be for Tibetans in Tibet to have to live under under this regime of online surveillance and harassment </p>
+                </Quote>
+        </div>   
+
+        </section>
+       
+	
+
+        <Pagination next={nexturl} nextTitle={nextTitle} prev={prevurl} prevTitle={prevTitle} />
+
+     
+
+	</div>
+
+
+
+	
+</Default>
