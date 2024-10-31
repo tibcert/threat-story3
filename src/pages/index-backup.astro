@@ -2,36 +2,13 @@
 import Default from "../layouts/Default.astro"
 import Hero from '../components/Heropage.astro'
 import ArrowOpen from '../icons/arrow-open.astro'
-import BannerLeftText from "../components/BannerLeftText.astro"
-import BannerRightText from "../components/BannerRightText.astro"
 
 ---
 <Default title="Home">	
-	<div class=" flex flex-col snap-mandatory h-full snap-y w-screen items-center bg-slate-900 justify-around">
+	<div class="container flex flex-col snap-mandatory h-full snap-y  w-screen relative">
 		<Hero/>
-		<BannerLeftText title="Intoduction" img="/images/city.jpg">
-		</BannerLeftText>
-		<BannerRightText title="Background" img="/images/bw.jpg">
-			
-			<div class="flex text-2xl text-slate-600 items-end justify-end px-20">
-				<a href="page/background/the-tibet-movement-goes-online/" class="flex items-center " transition:name="heading1"><ArrowOpen/>The Tibet Movement Goes Online</a>
-				<a href="page/background/the-tibet-movement-goes-online/" class="flex items-center " transition:name="heading1"><ArrowOpen/>The Tibet Movement Goes Online</a>
-			</div>
-		</BannerRightText>
-		<BannerLeftText title="Voices From The Community" img="/images/surveillance.jpg">
-			
-			<div class="flex text-2xl text-slate-600 items-end justify-start px-20">
-				<a href="page/voices-from-the-community/spying/" class="flex items-center " transition:name="heading1"><ArrowOpen/>Spying During The Pivotal Moments For THe Tibet Movement</a>
-				<a href="/page/voices-from-the-community/a-spectrum-of-threats/" class="flex items-center" transition:name="heading2"><ArrowOpen/>A Spectrum Of Threats</a>
-			</div>
-		</BannerLeftText>
-
-		<BannerRightText title="The Community Responds" img="/images/surveillance.jpg">
-		</BannerRightText>
-
-
-
-		<!-- <section id="intro" class="snap-start w-lvw bg-slate-300 h-lvh flex flex-col">
+	
+		<section id="intro" class="snap-start w-lvw bg-slate-300 h-lvh flex flex-col">
 			<div class="h-1/2 bg-black flex justify-between overflow-hidden ">
 				<h1 class="titleLeft font-bold text-9xl bg-gradient-to-r from-slate-700 to-slate-800 via-slate-200 hover:to-slate-400   bg-clip-text text-transparent content-center p-20" transition:name="title1"><a href="page/introduction">Introduction</a></h1><br>
 				<div class="w-1/4">
@@ -42,7 +19,8 @@ import BannerRightText from "../components/BannerRightText.astro"
 				<img class="h-full bg-red-500 w-1/3 z-10" src="/images/bw.jpg">
 				<div>
 					<h1 class="titleRight font-bold text-9xl text-white content-center pt-20  pr-20 text-right z-0 " transition:name="title2"> <a href="page/background">Background</a></h1>
-					<div class="text-slate-500  text-3xl md:text-4xl flex flex-col justify-end pr-20 py-2">
+					<p class="text-3xl text-slate-400 pr-20 text-right">This section tells the early history of how the Tibetan movement <br> came online and the digital threats that soon followed</p>
+					<div class="text-slate-500  text-3xl md:text-4xl flex justify-end pr-20 py-2">
 						<p class="hover:text-slate-400 py-1 hover:translate-x-2 transition duration-75">
 							<a href="page/background/the-tibet-movement-goes-online/" class="flex items-center " transition:name="heading1"><ArrowOpen/>The Tibet Movement Goes Online</a>
 						</p>
@@ -75,11 +53,15 @@ import BannerRightText from "../components/BannerRightText.astro"
 				<img class="h-full bg-red-500 w-2/4 z-10" src="/images/bw.jpg">
 				<h1 class="titleRight font-bold text-9xl text-white content-center p-20 text-right" transition:name="title4"><a href="page/the-community-responds">The Community Responds</a></h1>	
 			</div>
-		</section> -->
+		</section>
 
 
 	</div>
+	<script>
+		
+		
 
+	</script>
 
 
 
