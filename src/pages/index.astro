@@ -9,24 +9,24 @@ import BannerRightText from "../components/BannerRightText.astro"
 <Default title="Home">	
 	<div class=" flex flex-col snap-mandatory h-full snap-y w-screen items-center bg-slate-900 justify-around">
 		<Hero/>
-		<BannerLeftText title="Intoduction" img="/images/city.jpg">
+		<BannerLeftText title="Intoduction" img="/images/city.jpg" link="page/introduction">
 		</BannerLeftText>
-		<BannerRightText title="Background" img="/images/bw.jpg">
+		<BannerRightText title="Background" img="/images/bw.jpg" link="page/background">
 			
 			<div class="flex text-2xl text-slate-600 items-end justify-end px-20">
-				<a href="page/background/the-tibet-movement-goes-online/" class="flex items-center " transition:name="heading1"><ArrowOpen/>The Tibet Movement Goes Online</a>
-				<a href="page/background/the-tibet-movement-goes-online/" class="flex items-center " transition:name="heading1"><ArrowOpen/>The Tibet Movement Goes Online</a>
+				<a href="page/background/the-tibet-movement-goes-online/" class="flex items-center hover:text-slate-500" transition:name="heading1"><ArrowOpen/>The Tibet Movement Goes Online</a>
+				<a href="page/background/the-tibet-movement-goes-online/" class="flex items-center hover:text-slate-500" transition:name="heading1"><ArrowOpen/>The Tibet Movement Goes Online</a>
 			</div>
 		</BannerRightText>
-		<BannerLeftText title="Voices From The Community" img="/images/surveillance.jpg">
+		<BannerLeftText title="Voices From The Community" img="/images/surveillance.jpg" link="page/voices-from-the-community/">
 			
 			<div class="flex text-2xl text-slate-600 items-end justify-start px-20">
-				<a href="page/voices-from-the-community/spying/" class="flex items-center " transition:name="heading1"><ArrowOpen/>Spying During The Pivotal Moments For THe Tibet Movement</a>
-				<a href="/page/voices-from-the-community/a-spectrum-of-threats/" class="flex items-center" transition:name="heading2"><ArrowOpen/>A Spectrum Of Threats</a>
+				<a href="page/voices-from-the-community/spying/" class="flex items-center hover:text-slate-500" transition:name="heading1"><ArrowOpen/>Spying During The Pivotal Moments For THe Tibet Movement</a>
+				<a href="/page/voices-from-the-community/a-spectrum-of-threats/" class="flex items-center hover:text-slate-500" transition:name="heading2"><ArrowOpen/>A Spectrum Of Threats</a>
 			</div>
 		</BannerLeftText>
 
-		<BannerRightText title="The Community Responds" img="/images/surveillance.jpg">
+		<BannerRightText title="The Community Responds" img="/images/surveillance.jpg" link="page/the-community-responds/">
 		</BannerRightText>
 
 
