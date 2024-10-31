@@ -1,15 +1,14 @@
 ---
-import BannerLeftText from "../../../../components/BannerLeftText.astro"
-import BannerRightText from "../../../../components/BannerRightText.astro"
+
 import Pagination from "../../../../components/Pagination.astro"
 import Quote from "../../../../components/Quote.astro"
 import Default from "../../../../layouts/Default.astro"
 
 const title ="Surveillance, Harassment, And The 2008 Beijing Olympics"
-const nextTitle = ""
-const nexturl = ""
-const prevTitle = ""
-const prevurl = ""
+const nextTitle = "Spying And Self Immolations In Tibet"
+const nexturl = "/page/voices-from-the-community/spying/spying-and-self-immolation-in-tibet/"
+const prevTitle = "Spying During The Pivotal Moments For THe Tibet Movement"
+const prevurl = "/page/voices-from-the-community/spying/"
 
 ---
 <Default title={title}>
@@ -24,6 +23,7 @@ const prevurl = ""
                     <a href="/page/voices-from-the-community/">Voices From The Community</a>
                     <span class="px-2">/</span>
                     <a href="/page/voices-from-the-community/spying/"> Spying During The Pivotal Moments For THe Tibet Movement</a>
+                    <span class="px-2">/</span><a>{title}</a>
                 </p>
                 <h1 class="p-20 font-bold text-9xl bg-gradient-to-r from-slate-700 to-slate-800 via-slate-200  hover:from-slate-200 hover:via-slate-300 hover:to-slate-900  bg-clip-text text-transparent content-center  z-10  px-20 [text-shadow:_2px_2px_0_rgb(0_0_0_/_30%)] text-center" transition:name="title1">
                     {title}

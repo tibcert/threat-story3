@@ -6,10 +6,10 @@ import Default from "../../../../layouts/Default.astro"
 
 
 const title ="A SPECTRUM OF THREATS"
-const nextTitle = "On The Frontlines"
-const nexturl = "/page/on-the-frontlines"
-const prevTitle = "The Tibet Movement Goes Online"
-const prevurl = "/page/the-tibet-movement-goes-online"
+const nextTitle = "The Community Responds"
+const nexturl = "/page/the-community-responds/"
+const prevTitle = "Voices From The Community"
+const prevurl = "/page/voices-from-the-community/"
 ---
 <Default title={title}>
 	<div class=" flex flex-col snap-mandatory h-full snap-y w-screen items-center bg-slate-900 justify-around">
@@ -17,6 +17,7 @@ const prevurl = "/page/the-tibet-movement-goes-online"
 			<div class=" bg-black  justify-between overflow-hidden flex flex-col items-center">
 				<p class="text-slate-400 text-2xl text-center p-5  m-auto">
                     <a href="/">Home</a><span class="px-2">/</span><a href="/page/voices-from-the-community/"> Voices From The Community</a>
+					<span class="px-2">/</span><a>{title}</a>
                 </p>
 				<h1 class="pt-20 font-bold text-9xl bg-gradient-to-r from-slate-700 to-slate-800 via-slate-200   bg-clip-text text-transparent content-center  z-10  px-20 [text-shadow:_2px_2px_0_rgb(0_0_0_/_30%)] text-center" transition:name="title1">
                     {title}
