@@ -3,13 +3,12 @@ const {title,link,img} = Astro.props;
 ---
 <div class="group h-1/3 bg-slate-900  flex justify-between items-center overflow-hidden">
     <img class=" bg-red-500 w-1/3 z-10 grayscale group-hover:grayscale-0" src={img}>
-    
+
    <div class="p-20">
     <h1 class="titleRight font-bold text-9xl bg-gradient-to-r from-slate-700 to-slate-800 via-slate-200 hover:to-slate-400  bg-clip-text text-transparent content-center px-20  pr-20 text-right z-0 text-wrap [text-shadow:_2px_2px_0_rgb(0_0_0_/_30%)]" transition:name="title2"> 
         <a href={link} class="">{title}</a>
     </h1>
-    
     <slot/>
    </div>
-    
+   
 </div>
