@@ -1,6 +1,7 @@
 ---
 import Pagination from "../../../components/Pagination.astro"
 import Quote from "../../../components/Quote.astro"
+import Tooltip from "../../../components/Tooltip.astro"
 import Video from "../../../components/Video.astro"
 import Default from "../../../layouts/Default.astro"
 
@@ -30,36 +31,56 @@ const prevurl = "/page/background"
 		</section>
         <section class="content bg-slate-900 w-full text-3xl font-oswald text-slate-300">
             <div class="mx-auto w-4/5 p-10">
-                <p>
-                    Dharamshala, a small city in Northern India has been the central hub of the Tibetan diaspora since His Holiness the Dalai Lama made it his residence after escaping from Tibet in 1959.
-                </p>
-                <p>
-                    The first connection to the Internet in Dharamshala was administered by the Tibetan Computer Resource Centre (TCRC), a department of the Tibetan Government in Exile (TGiE, now known as the Central Tibetan Administration, CTA) that provides technical support Accessing email required going to the roof of the TCRC office, where there was a single computer available.
-                </p>
-                <p>
-                    The next step was navigating a complex process to send messages that were stored in Delhi, where they would wait for forwarding on to the final recipient. There was only one address for sending or receiving email for the entire community.
-                </p>
-                <p>
-                    The community truly came online in the mid-1990s thanks to efforts from Dan Haig and a group of volunteers. Dan Haig did early work on the World Wide Web in California before coming to Dharamsala to study Tibetan medicine. Given his technical expertise he soon found himself helping the Tibetan Government in Exile connect to the Internet.
-                </p>
+            <p>
+                Dharamshala, a small city in Northern India has been the central hub of the Tibetan diaspora since His Holiness the Dalai Lama made it his residence after escaping from Tibet in 1959.
+            </p>
+            <p>
+                Before 1995, the Tibetan community relied on Internet connectivity set up in India by the United Nations called  “ERNET” (Education and Research Network).
+                Accessing email required going to the roof of the Nathang Parkhang building where the Tibetan Computer Resource Centre (TCRC) office was located, where there was a single computer available.
+                TCRC is a department of the Tibetan Government-in-Exile (TGiE, now known as the Central Tibetan Administration, CTA) that provides technical resources and technical support to all other departments.  
+                At the time, there was only one email address for sending or receiving email for the entire community.
+            </p>
+            <p>
+                Then, in the mid-1997, the community truly came online under the administration of TCRC and with the support of an American, Dan Haig, who did early work on the World Wide Web in California.
+                Dan had initially traveled to Dharamsala to study Tibetan medicine, however given his technical expertise he soon found himself helping the Tibetan Government in Exile connect to the Internet.
+            </p>
             <Quote img="/media/dan.jpg" person="Dan Haig" title="Former Staff at TCRC" >
-                <p>In January of 1996, I registered tibet.org, which marked the beginning of my involvement with the Tibet movement. Unexpectedly, this journey led me to various places I had never envisioned. Concurrently, I maintained communication with Phuntsok Namgyal. About a year and a half later, I found myself in India with four companions, equipped with everything necessary to establish a network connecting all the offices in Gangkyi.</p>
-                <p>This network facilitated a dial-in connection from the Private Office and Norbulingka Institute, among other locations. Our goal was to usher the Tibetan exile community and the government-in-exile into the Internet age.”</p>
+                <p>In January of 1996, I registered tibet.org, which marked the beginning of my involvement with the Tibet movement. Unexpectedly, 
+                    this journey led me to various places I had never envisioned. Concurrently, I maintained communication with Phuntsok Namgyal [the Manager at TCRC]
+                </p>
+                <p>About a year and a half later, I found myself in India with four companions, equipped with everything necessary to establish a network
+                     connecting all the offices in Gangkyi [The colloquial physical location name in Dharamsala where Tibetan Government in Exile is based].
+                </p>
+                <p>
+                    This network facilitated a dial-in connection from the Private Office of His Holiness the Dalai Lama and Norbulingka Institute, among other locations.
+                </p>
+                <p>
+                    Our goal was to usher the Tibetan exile community and the government-in-exile into the Internet age."
+                </p>
             </Quote>
                 
             <p>
-                Dan and his friends, together with the TCRC, helped the TGiE set up an Internet-connected Local Area Network between all seven ministries, the Kashag, Library of Tibetan Works and Archives, and provided several other offices with dialup connectivity to the Private Office of His Holiness the Dalai Lama (OHHDL), the Norbulingka Institute and other key community organizations.
+                Dan and his friends, together with the TCRC, helped the TGiE set up an Internet-connected Local Area Network between the Kashag (highest executive office of TGiE), all seven ministries of the TGiE ,
+                the Library of Tibetan Works and Archives, and provided connectivity to the Private Office of His Holiness the Dalai Lama (OHHDL), 
+                the Norbulingka Institute and other key community organizations.<sup data-tooltip-target="footnote-3" data-tooltip-trigger="click" class="hover:text-slate-400">3</sup>
             </p>
             <p>
-                On December 18 1996, the website DalaiLama.com was registered.4 At that time, monks from the OHHDL were managing the Office’s email, maintaining databases, hosting the website, and managing the content. The OHHDL used email to schedule His Holiness’ meetings with international diplomats and religious leaders around the globe.
+                On December 18, 1996, the website DalaiLama.com was registered. <sup data-tooltip-target="footnote-4" data-tooltip-trigger="click" class="hover:text-slate-400">4</sup>
+                At that time, monks from the OHHDL were managing the Office’s email, maintaining databases, hosting the website, and managing the content.
+                The OHHDL used email to schedule His Holiness’ meetings with international diplomats and religious leaders around the globe.
             </p> 
         </div>   
         <div class="mx-auto w-4/5 p-10 flex ">
             <img src="/media/dalailama.jpg" class="h-auto w-80 max-w-full" alt="">
         <div>
-            <p>DalaiLama.com webpage from 1999 archived online</p>
-            <p>In 2000, the TGiE’s web presence (Tibet.Net) was established and the community network consisted of over 120 computers.</p>
-            <p>It was also around this time that the wider Tibetan community both in India and abroad started to come online. Exposure to the Internet transformed the cause for human rights in Tibet from a regionalized effort to a globally coordinated movement. However, as the community came online, information security threats followed. Dan Haig recounts how at this early stage of Internet connectivity, digital espionage emerged.</p>
+            <p>DalaiLama.com webpage from 1999 archived online <sup data-tooltip-target="footnote-5" data-tooltip-trigger="click" class="hover:text-slate-400">5</sup></p>
+            <p>In 2000, the official website of the TGiE (tibet.net) was established and the TGiE network consisted of over 120 computers.<sup data-tooltip-target="footnote-6" data-tooltip-trigger="click" class="hover:text-slate-400">6</sup></p>
+            <p>It was also around this time that the wider Tibetan community both in India and abroad started to come online. 
+               However, as the community came online, information security threats followed.
+            </p>
+            <p>
+            Dan Haig recounts how even at this early stage of Internet connectivity, digital espionage emerged.
+            </p>
         </div>
         </div>
 
@@ -67,19 +88,26 @@ const prevurl = "/page/background"
   
                 <Quote img="/media/dan.jpg" person="Dan Haig" title="Former Staff at TCRC">
                     <p>
-                        “During that time, we faced minimal hacking issues ourselves, but the Chinese government initiated a deceptive tactic. They began sending emails,
-                         spoofing legitimate addresses and claiming they had been compromised. For instance, an email purportedly from me, Daniel D. Haig, was circulated to Tibet Support Groups list.
-                          However, it was poorly written and signed as ‘Haig D Daniel,’ which was obviously fake since I typically sign my emails with just a dot and a ‘D.’
+                        During that time, we faced minimal hacking issues ourselves, but the Chinese government initiated a deceptive tactic. 
+                        They began sending emails, spoofing legitimate addresses and claiming they had been compromised. For instance, an email purportedly from me, 
+                        Daniel D. Haig, was circulated to the Tibet Support Groups list.
+                        However, it was poorly written and signed as 'Haig D Daniel,' which was obviously fake since I typically sign my emails with just a dot and a 'D.'
                     </p>
                     <p>
-                        Despite the obvious forgery, they refined their approach, enticing recipients to click on links leading to websites hosting malware. Subsequently,
-                         they launched an extensive campaign, distributing emails with malicious attachments. 
-                        Clicking on these attachments would infect computers, leading to a myriad of potential consequences.”  
+                        Despite the obvious forgery, they refined their approach, enticing recipients to click on links leading to websites hosting malware.
+                        Subsequently, they launched an extensive campaign, distributing emails with malicious attachments. 
+                        Clicking on these attachments would infect computers, leading to a myriad of potential consequences.
                     </p>
                     
                 </Quote>
                 <p>
-                    Information technology is a double-edged sword for the Tibetan community. On one hand, it has significantly contributed to strengthening the Tibetan movement, fostering greater communication opportunities, and promoting awareness of Tibetan culture and heritage on a global scale. However, alongside these advancements, the community has become increasingly vulnerable to online threats orchestrated by groups affiliated with the PRC. Exploiting the community’s relatively limited information security capacity, these groups infiltrate communication networks, surveil individuals and organizations, and pose significant challenges to the integrity and security of the Tibetan movement.
+                    Information technology has always been a double-edged sword for the Tibetan community.
+                    On one hand, it has significantly contributed to strengthening the Tibetan freedom movement, fostering greater communication opportunities
+                     between Tibetans in Tibet and the outside world, and promoting awareness of Tibetan Buddhism and culture on a global scale. 
+                     However, alongside these advancements, the community has become increasingly vulnerable to online threats orchestrated by groups 
+                     affiliated with the PRC. Exploiting the community's relatively limited information security capacity, 
+                     these groups infiltrate communication networks, surveil individuals and organizations, 
+                    and continue to pose significant challenges to the integrity and security of the Tibetan movement.
                 </p>
 
                 <Video src="https://tibcert.org/threat-story/images/dan-video.mp4"/>
@@ -97,3 +125,16 @@ const prevurl = "/page/background"
 
 	
 </Default>
+
+<Tooltip id="footnote-3">
+    <a href="https://web.archive.org/web/20150626144441/http://www.tibetangeeks.com/geeks/history/how_the_internet_came_to_dhasa_tibetans-dan_haig-20130927.html" target="_blank">Dan Haig - How the internet came to Dharamsala</a>
+</Tooltip>
+<Tooltip id="footnote-4">
+    Source: <a href="https://who.is/whois/dalailama.com" target="_blank"> https://who.is/whois/dalailama.com (accessed December 8, 2022)</a>
+</Tooltip>
+<Tooltip id="footnote-5">
+    Original website archived here: <a href="https://web.archive.org/web/19991013110002/http://dalailama.com/" target="_blank">https://web.archive.org/web/19991013110002/http://dalailama.com/ (accessed December 8, 2022)</a>
+</Tooltip>
+<Tooltip id="footnote-6">
+     <a href="https://web.archive.org/web/20150626144441/http://www.tibetangeeks.com/geeks/history/how_the_internet_came_to_dhasa_tibetans-dan_haig-20130927.htm" target="_blank">https://web.archive.org/web/20150626144441/http://www.tibetangeeks.com/geeks/history/how_the_internet_came_to_dhasa_tibetans-dan_haig-20130927.htm</a>
+</Tooltip>

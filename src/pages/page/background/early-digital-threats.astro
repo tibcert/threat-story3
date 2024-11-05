@@ -1,6 +1,9 @@
 ---
 import Pagination from "../../../components/Pagination.astro"
+import Quote from "../../../components/Quote.astro"
+import Tooltip from "../../../components/Tooltip.astro"
 import Default from "../../../layouts/Default.astro"
+import Video from "../../../components/Video.astro"
 
 const title ="Early Digital Threats Against The Community"
 const nextTitle = "Voices From The Community"
@@ -25,44 +28,82 @@ const prevurl = "/page/background/the-tibet-movement-goes-online/"
 		</section>
         <section class="content bg-slate-900 w-full text-3xl font-oswald">
             <div class="mx-auto w-4/5 p-10 text-white">
+            <p>
+                One of the earliest documented incidents of digital espionage against the community was reported in September 2003 by Jigme Tsering, 
+                a manager of the Tibetan Computer Resource Centre.<sup data-tooltip-target="footnote-7" data-tooltip-trigger="click" class="hover:text-slate-400">7</sup>
+            </p>
+            <Quote person="Jigme Tsering" img="/media/profile.jpg">
+                <p>A number of targeted computer viruses circulating via email throughout the Tibetan Government in Exile and Tibetan support groups and related Non-Government Organizations have been discovered or brought to our attention.</p>
                 <p>
-                    A young Tibetan woman living in Northern India takes a trip back to her village in Tibet to visit family. For the last two years she has been working for Drewla, a Tibetan NGO that provides ways for Tibetans inside Tibet to connect with the diaspora online. The trip does not go as planned.A young Tibetan woman living in Northern India takes a trip back to her village in Tibet to visit family. For the last two years she has been working for Drewla, a Tibetan NGO that provides ways for Tibetans inside Tibet to connect with the diaspora online. The trip does not go as planned.
+                 These viruses have appeared in a number of variants, indicating a progressive and sustained development process. 
+                 For example, some were taking advantage of known security loopholes in Microsoft software in order to automatically run and are always personalized to impersonate departmental emails following previous attempts to collect email address lists.
+                 One variant analyzed was found to have been sourced from the Yunnan Province in China, and was designed to collect information of an infected computer and send it via email to an address in Beijing.
                 </p>
-                <p>
-                    When she reaches the Nepalese-Tibetan border she is immediately taken into detention and held for two months. Chinese authorities interrogate her about her employment in Dharamsala. The young woman denies being involved in any political activities and insists she went to Dharamsala for studies. The authorities present a stack of chat transcripts from conversations she has had online. They explain they have been monitoring Drewla and know about its activities. They eventually release the woman and allow her to travel to her village with a message for her colleagues back in Dharamsala: “You are not welcome to return to Tibet”.
-                </p>
-                <p>
-                    Drewla was indeed under surveillance. Researchers at the Citizen Lab at the University of Toronto ran an investigation into the networks of Drewla and other Tibetan organizations in 2009 and found they were all infected by malware that connected to GhostNet, a digital espionage network.1 The goal of GhostNet was to maintain clandestine access to computer networks and communications for as long as possible.
-                </p>
-                <p>
-                    Tibetans were not the only targets. GhostNet infiltrated over a thousand computers in over one hundred countries around the world. The command and control servers used to operate the malware were traced back to China, and the targets all had a common connection: geopolitical interest to the People’s Republic of China (PRC). Exposing this network revealed to the world a dark truth that Tibetans had known for years: China uses targeted malware as a form of digital espionage to spy on its opponents.
-                </p>
-                <p>
-                    The Tibetan community has been targeted by digital espionage for over 20 years by groups with ties to the PRC. These coordinated campaigns aim to infiltrate the communications and data of key people and organizations in the movement. This form of spying violates rights to privacy, assembly, and free speech. Digital espionage is a form of transnational repression that extends the reach of authoritarian states beyond their borders to surveil, harass, and intimidate political opponents and marginalized groups. By infiltrating digital communications and preemptively identifying dissent, the PRC aims to counteract any challenges to its authority, both domestically and internationally.
-                </p>
-                <p>
-                    Targeted espionage campaigns against the Tibetan movement have been widely documented by Threat Intelligence companies and research groups.2 Missing from these reports are the voices of the community and discussion of how decades of digital espionage impact the movement. This report documents the history of digital espionage against the Tibetan community through first hand accounts of targeted people and groups. These stories reveal the harms of digital transnational repression and show how the Tibetan movement has built capacity to defend against the threat.
-                </p>
-                <p>
-                    The arduous history of digital espionage against the Tibetan community acts as a canary in the coal mine for global civil society. We provide a warning that harnessing the power of information technology for social movements requires vigilant attention to digital security. The stories shared in this report present the harms of digital threats while also offering a message of empowerment that shows how social movements under repression from authoritarianism can persevere and continue to speak truth to power.
-                </p>
+             </Quote>
+             <Video src="https://tibcert.org/threat-story/images/jigme-la.mp4"></Video>
+             <p>
+                Targeted malware delivered as file attachments to email messages is one of the most common digital espionage tactics experienced by the Tibetan community.
+             </p>
+             <p>
+                Targeted malware operations typically consist of the following process: The targeted user receives an email, possibly appearing to be from someone they know with a message—sometimes specific,
+                sometimes generic—that urges the user to open an attachment, usually a PDF or Microsoft Office document or visit a website.
+             </p>
+             <p>
+                If the user opens the attachment or link with a vulnerable version of software that has been targeted for exploitation and no security mitigations are in place, their device will likely be compromised.
+                A clean version of the document is typically embedded in the malicious file and is opened upon successful exploitation so as not to arouse suspicion of the recipient. Once the user’s computer is compromised, 
+                operators can extract documents, email and other data, and possibly move laterally through the compromised network to target other devices.
+             </p>
+             <p>
+                Research conducted into the decades of digital espionage against Tibetans  has shown that – as a community – Tibetan civil society faces the same level of information security threats as major companies and governments,
+                 but with far fewer resources to defend against them. This stark reality was first revealed in 2009, when the Information Warfare Monitor (a collaboration between the Citizen Lab and the Secdev Group) published the report “Tracking GhostNet.”<sup data-tooltip-target="footnote-8" data-tooltip-trigger="click" class="hover:text-slate-400">8</sup>  
+                 The investigation started as a probe into key Tibetan organizations to determine if they were compromised by digital espionage.
+                 The result was uncovering the GhostNet digital espionage network that compromised the Offices of HHDL and other Tibetan groups, alongside 1,295 computers in 103 countries around the world – 30% of which can be labeled as “high value” targets 
+                 such as Ministries of Foreign Affairs and Embassies. The investigation traced the command and control servers used to issue commands to compromised machines back to locations in China. However, the researchers were unable to conclusively
+                  determine the potential role of the government. What was evident is that this network was performing politically motivated espionage targeting both civil society and governments. From the perspective of the Tibetan community the culprit was clear, it was the government of China.
+             </p>
+             <p>
+                When the GhostNet report was released, there  were almost no public reports on digital espionage. 
+                In subsequent years public reporting from the Threat Intelligence industry grew considerably and served as marketing material for companies. 
+                In general these reports focus on threats to governments and the private sector which represent the customer base of the industry. 
+                Civil society is seldom the focus of these reports with an important exception, the Tibetan community.
+             </p>
+             <p>
+                In the accompanying Semi-technical report, TibCERT systematically reviewed threat intelligence reports from 2009 to 2022 and found 63 reports<sup data-tooltip-target="footnote-9" data-tooltip-trigger="click" class="hover:text-slate-400">9</sup> which documented digital espionage against the Tibetan community.
+                These reports are primarily focused on technical analysis of the malware threats and do not address how they affect the targeted individuals and organizations. Although there is a significant amount of publicly
+                available reports of targeted espionage campaigns against the Tibetan community, we believe that this volume of public reports may not be the only reports available as it is likely plausible that threat intelligence companies may have a lot more internal reports that are not shared publicly.
+             </p>
+             <p>
+                The malware used in these campaigns often mirrors digital espionage activities originating from China that target governments and the private sector. Therefore, reporting on cyber threats against Tibetans do provide threat intelligence companies a way to publicly disclose details about 
+                the modus operandi behind these cyber attack campaigns without having to disclose any sensitive incidents or customer data. This phenomenon has amplified the coverage of cyber threats against the Tibetan diaspora community from threat intelligence companies among other civil society 
+                movements and oppressed minorities. These reports provide useful technical information and serve as evidence of decades of targeted espionage. However, typically these private sector reports are done without involvement of the Tibetan community and rarely provide any notifications or 
+                incident response support to targeted individuals and groups.<sup data-tooltip-target="footnote-10" data-tooltip-trigger="click" class="hover:text-slate-400">10</sup> Therefore, while the reports provide value to companies, the Tibetan community does not receive any direct support.
+             </p>
             </div>
-
-
         </section>
 
         <Pagination next={nexturl} nextTitle={nextTitle} prev={prevurl} prevTitle={prevTitle} />
-
-      
-
 	</div>
 
-
-        
-   
-
-
-
-
-	
 </Default>
+
+<Tooltip id="footnote-7">
+    “Chinese Internet group found spying on Tibetan government computers”, International Campaign for Tibet, October 28, 2003. 
+    <a href="https://savetibet.org/chinese-internet-group-found-spying-on-tibetan-government-computers/" target="_blank">https://savetibet.org/chinese-internet-group-found-spying-on-tibetan-government-computers/</a>
+</Tooltip>
+<Tooltip id="footnote-8">
+    Tracking Ghostnet: Investigating a Cyber Espionage Network”, Citizen Lab, March 29, 2009 <a href="https://citizenlab.ca/wp-content/uploads/2017/05/ghostnet.pdf" target="_blank">https://citizenlab.ca/wp-content/uploads/2017/05/ghostnet.pdf</a>
+</Tooltip>
+<Tooltip id="footnote-9">
+   <p>The reports were selected based on their clear references to cyber attacks against Tibetan diaspora community ever since the 2000s, published by academic institutions and cyber security companies namely Citizen Lab (University of Toronto),
+     Kaspersky, Trend Micro, Palo Alto Networks , AT&T Alien Labs, Proofpoint, Recorded Future, and Security Week. We ensured the reports included more technical details to ascertain the level of effort put behind these attacks,
+     tactics deployed in the attacks, evolution of these threats over time and what inferences we can make to understand who these threat actors are and what their motivations could be</p>
+</Tooltip>
+<Tooltip id="footnote-10">
+    <p>
+        An important exception is the work of the Citizen Lab at the University of Toronto, which was a key partner in the GhostNet investigation and subsequently spent over a decade documenting threats to the Tibetan Community. 
+        This academic research included direct involvement of the community and sought to increase digital security knowledge and capacities of targeted groups.
+        There are also instances of private sector companies attempting outreach to the Tibetan community to report compromise.
+        Prior to the launch of TibCERT this outreach was very difficult as companies did not know how to reach targeted groups and there was no central hub to share information.
+        TibCERT helps facilitate communication and coordination between private sector companies with threat information and targeted groups.
+    </p>
+ </Tooltip>

@@ -9,9 +9,7 @@ const nexturl = "/page/background"
 const prevTitle = "Home"
 const prevurl = "/"
 ---
-<Tooltip footnote="1">
-    <a href="https://citizenlab.ca/wp-content/uploads/2017/05/ghostnet.pdf" target="_blank">https://citizenlab.ca/wp-content/uploads/2017/05/ghostnet.pdf </a>
-</Tooltip>
+
 <Default title={title}>
 
 	<div class=" flex flex-col snap-mandatory h-full snap-y w-screen items-center bg-slate-900 justify-around">
@@ -42,7 +40,7 @@ const prevurl = "/"
                 </p>
                 <p>
                     Drewla was indeed under surveillance. Researchers at the Citizen Lab at the University of Toronto ran an investigation into the networks of Drewla and other Tibetan organizations 
-                    in 2009 and found they were all infected by malware that connected to GhostNet, a digital espionage network. <sup data-tooltip-target="footnote-1" data-tooltip-trigger="click">1</sup>
+                    in 2009 and found they were all infected by malware that connected to GhostNet, a digital espionage network.<sup data-tooltip-target="footnote-1" data-tooltip-trigger="click" class="hover:text-slate-400">1</sup>
                                          
                     The goal of GhostNet was to maintain clandestine access to computer networks and communications for as long as possible.
                 </p>
@@ -66,4 +64,6 @@ const prevurl = "/"
 </Default>
 
 
-<Tooltip id="footnote-1"><p>test</p></Tooltip>
+<Tooltip id="footnote-1">
+    <a href="https://tibcert.org/threat-story/#fnref:1" target="_blank">https://tibcert.org/threat-story/#fnref:1</a>
+</Tooltip>
