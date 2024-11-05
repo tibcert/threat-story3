@@ -1,0 +1,76 @@
+---
+import Pagination from "../../../../../components/Pagination.astro"
+import Quote from "../../../../../components/Quote.astro"
+import Default from "../../../../../layouts/Default.astro"
+import Video from "../../../../../components/Video.astro"
+
+
+const title ="The Mobile Threats Emerge"
+const nextTitle = "One Click Away From Compromise"
+const nexturl = "/page/voices-from-the-community/a-spectrum-of-threats/the-spy-in-your-pocket/one-click-away-from-compromise/"
+const prevTitle = "A Spectrum Of Threats"
+const prevurl = "/page/voices-from-the-community/a-spectrum-of-threats/"
+---
+<Default title={title}>
+	<div class=" flex flex-col snap-mandatory h-full snap-y w-screen items-center bg-slate-900 justify-around">
+		<section id="intro" class="snap-start w-lvw bg-slate-300 ">
+			<div class=" bg-black  justify-between overflow-hidden flex flex-col items-center">
+				<p class="text-slate-400 text-2xl text-center p-5  m-auto">
+                    <a href="/">Home</a><span class="px-2">/</span><a href="/page/voices-from-the-community/"> Voices From The Community</a>
+                    <span class="px-2">/</span><a href="/page/voices-from-the-community/a-spectrum-of-threats/"> A Spectrum Of Threats</a>
+                    <span class="px-2">/</span><a href="/page/voices-from-the-community/a-spectrum-of-threats/the-spy-in-your-pocket/"> The Spy In Your Pocket/</a>
+					<span class="px-2">/</span><a>{title}</a>
+                </p>
+				<h1 class="py-20 font-bold text-9xl bg-gradient-to-r from-slate-700 to-slate-800 via-slate-200   bg-clip-text text-transparent content-center  z-10  px-20 [text-shadow:_2px_2px_0_rgb(0_0_0_/_30%)] text-center" transition:name="title1">
+                    {title}
+                    </h1>
+			</div>
+		</section>
+		<section class="content bg-slate-900 w-full text-3xl font-oswald text-slate-300">
+			<div class="mx-auto w-4/5 p-10">
+                <Video src="https://threat-story.s3.us-east-1.amazonaws.com/images/Lobsang-la.mp4"></Video>
+			<p>
+                In 2011, WeChat, a mobile messaging application, launched and has become the most popular communications platform in China and quickly spread to Tibetan populations. 
+                The popularity of WeChat became a concern due to the app being under the control of a Chinese company and therefore subject to information controls dictated by the Chinese government. 
+                Reports of censorship and suspected surveillance on WeChat began to circulate in the community
+            </p>
+            <p>
+                Tibet Action Institute is an activist organization that uses digital technology and strategic nonviolent action to support the Tibet movement. 
+                In response to digital security concerns surrounding WeChat, Tibet Action Institute promoted alternative communications apps to Tibetans including KakaoTalk (a South Korean chat app).
+            </p>
+            <p>
+                Lobsang Gyatso Sither, then serving as the Digital Security Program Manager at Tibet Action Institute promoted this campaign by sending trusted contacts installation files for the apps on Android (Android Application Package File, APKs).
+            </p>
+            <p>
+                On December 4, 2012,  Lobsang sent an email to a member of the Tibetan Parliament that included APKs for KakaoTalk and Internet radio apps with instructions on how to install and use the apps.
+            </p>
+            <p>
+                On January 16, 2013, a high profile member of the Tibetan community received an identical email that appeared to also come from Lobsang. 
+                This email was a fake and attached APK files with additional features that were designed to send a user’s contacts, SMS message history, and cellular network location to attackers.
+            </p>
+            <p>
+                This chain of events suggests that the email of the Tibetan Parliamentarian who first received the real email was already compromised, giving the attackers access to the message and showing them that Tibetans were circulating APKs through their networks of trust.
+                 The attackers then repurposed the message and modified the APKs to include malware.
+            </p>
+            <Quote person="Lobsang Gyatso Sither" title="Director of Technology at Tibet Action Institute , Members of Parliament" img="/media/lobsang.jpg">
+                <p>
+                    As someone working on digital security and constantly looking at phishing attacks, it was a surprise to see your own email being used for phishing purposes and I wasn’t sure how to feel about it.
+                    Once I learned more about the attack, the fact that I had no idea how many people might have been lured with this email was scary. Also, how something that is meant for allowing people to access information has been repurposed by the Chinese Government to spy on them made me angry. 
+                    It also made me realize the truth that Tibetans are targeted as a community and our response has to be community led.
+                </p>
+            </Quote>
+            <p>
+                This attack was one of the first examples of mobile malware we observed in the community and showed how digital threats against the community adapt. As Tibetans went mobile, so did the threats. 
+            </p>
+			</div>   
+	
+		</section>
+
+        <Pagination next={nexturl} nextTitle={nextTitle} prev={prevurl} prevTitle={prevTitle} />
+
+      
+
+	</div>
+
+	
+</Default>

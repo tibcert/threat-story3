@@ -1,0 +1,81 @@
+---
+import Pagination from "../../../../../components/Pagination.astro"
+import Quote from "../../../../../components/Quote.astro"
+import Video from "../../../../../components/Video.astro"
+import Default from "../../../../../layouts/Default.astro"
+
+const title = "One Click Away From Compromise"
+
+const PrevTitle = "Mobile Threats Emerge"
+const prevtUrl = "/page/voices-from-the-community/a-spectrum-of-threats/the-spy-in-your-pocket/mobile-threats-emerge/"
+const nextTitle = " Voices From The Community"
+const nextUrl = "/page/voices-from-the-community/"
+
+---
+<Default title={title}>
+
+	<div class=" flex flex-col snap-mandatory h-full snap-y w-screen items-center bg-slate-900 justify-around">
+
+		<section id="intro" class="snap-start w-lvw bg-slate-300 ">
+			<div class=" bg-black flex flex-col justify-between overflow-hidden">
+                <p class="text-slate-400 text-2xl text-center p-5  m-auto">
+                    <a href="/">Home</a>
+                    <span class="px-2">/</span>
+                    <a href="/page/voices-from-the-community/">Voices From The Community</a>
+                    <span class="px-2">/</span>
+                    <a href="/page/voices-from-the-community/a-spectrum-of-threats/"> A Spectrum of Threat</a>
+                    <span class="px-2">/</span><a>{title}</a>
+                </p>
+                <h1 class="p-20 font-bold text-9xl bg-gradient-to-r from-slate-700 to-slate-800 via-slate-200   bg-clip-text text-transparent content-center  z-10  px-20 [text-shadow:_2px_2px_0_rgb(0_0_0_/_30%)] text-center" transition:name="title1">
+                    {title}
+                    </h1>
+			</div>
+		</section>
+
+
+<section class="content bg-slate-900 w-full text-3xl font-oswald">
+    <div class="mx-auto w-4/5 p-10 text-white"> 
+    <Video src="https://tibcert.org/threat-story/images/Namgyal%20Dolkar.mp4"/>
+    <p>
+        The sophistication of social engineering used to lure targets to install mobile malware and the technical sophistication of the malware itself has significantly escalated in recent years.
+    </p> 
+    <p>
+        Between November 2018 and May 2019, senior members of key Tibetan groups received malicious links in individually tailored WhatsApp text messages made to appear to be from NGO workers, 
+        journalists, and other fake personas. The links led to code designed to exploit web browser vulnerabilities to install spyware on iOS and Android devices. 
+        This kind of threat is called a “one click exploit”, because all it takes is one click of a link for a target to be compromised. 
+        This espionage campaign is one of the most sophisticated we have observed in the community over the last decade. 
+    </p>
+    <p>
+        Among the targets of this campaign was Namgyal Dolkar, a Tibetan parliamentarian.
+         On the night of November 12, 2018, she received a WhatsApp message from “Jason Wu” who claimed to be the head of the Refugee Group at Amnesty International’s Hong Kong branch.
+          Namgyal Dolkar often receives unsolicited messages from human rights organizations seeking her assistance so this message did not seem out of the ordinary. 
+          She replied to “Jason” who proceeded to describe a recent self-immolation in Tibet, 
+          asked her to help verify the incident for an upcoming Amnesty International report on human rights in China, and sent a link. 
+          Namgyal Dolkar forwarded the message to TibCERT who in collaboration with researchers at the Citizen Lab discovered the link connected to exploits designed to infect iPhone and Android devices with malware.
+    </p>
+    <p>
+        Amnesty International does not employ anyone named Jason Wu. The message was very carefully crafted to trick Namgyal Dolkar into clicking the link, 
+        which would infect her phone with malware. For Namgyal Dolkar, the real sender of the message was clear. She firmly suspects China behind the campaign as China has long persecuted the Tibetan freedom movement in exile.
+    </p>
+
+    <Quote img="/media/namgyal-dolkar.jpeg" title="Members of Parliament" person="Namgyal Dolkar">
+        <p>Considering the work we do, which directly revolves around exposing China for its various forms of human rights abuses in Tibet, and also because similar viruses I’ve received [have targeted] other Tibetan activist groups working on the issue, it is clear it is a work of the Chinese Communist government.</p>
+    </Quote>
+    <p>
+        In total, we found 17 high profile members of the Tibetan community who were targeted by the same campaign including members of the Offices of His Holiness the Dalai Lama, the Central Tibet Administration, Tibetan Parliamentarians and Tibetan human rights groups. This campaign was highly organized and targeted with multiple fake personas used. In every case the fake persona engaged the target in a conversation and once an exchange had started would send a malicious link. All it would take is one click of the link for the target’s phone to be turned into a spy in their pocket.
+    </p>
+
+    </div>        
+</section>
+
+    
+        <Pagination prevTitle={PrevTitle} prev={prevtUrl} nextTitle={nextTitle} next={nextUrl} home="/">
+
+
+	</div>
+
+
+
+
+	
+</Default>
