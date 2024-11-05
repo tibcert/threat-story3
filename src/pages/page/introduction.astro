@@ -1,6 +1,7 @@
 ---
 import Default from "../../layouts/Default.astro";
 import Pagination from "../../components/Pagination.astro";
+import Tooltip from "../../components/Tooltip.astro";
 
 const title ="Introduction"
 const nextTitle = "Background"
@@ -8,6 +9,9 @@ const nexturl = "/page/background"
 const prevTitle = "Home"
 const prevurl = "/"
 ---
+<Tooltip footnote="1">
+    <a href="https://citizenlab.ca/wp-content/uploads/2017/05/ghostnet.pdf" target="_blank">https://citizenlab.ca/wp-content/uploads/2017/05/ghostnet.pdf </a>
+</Tooltip>
 <Default title={title}>
 
 	<div class=" flex flex-col snap-mandatory h-full snap-y w-screen items-center bg-slate-900 justify-around">
@@ -22,13 +26,25 @@ const prevurl = "/"
         <section class="content bg-slate-900 w-full text-3xl font-oswald">
             <div class="mx-auto w-4/5 p-10 text-white">
                 <p>
-                    A young Tibetan woman living in Northern India takes a trip back to her village in Tibet to visit family. For the last two years she has been working for Drewla, a Tibetan NGO that provides ways for Tibetans inside Tibet to connect with the diaspora online. The trip does not go as planned.A young Tibetan woman living in Northern India takes a trip back to her village in Tibet to visit family. For the last two years she has been working for Drewla, a Tibetan NGO that provides ways for Tibetans inside Tibet to connect with the diaspora online. The trip does not go as planned.
+                    A young Tibetan woman living in Northern India takes a trip back to her village in Tibet to visit family. 
+                    For the last two years she has been working for Drewla, a Tibetan NGO that provides ways for Tibetans inside Tibet to connect with the diaspora online.
+                     The trip does not go as planned.A young Tibetan woman living in Northern India takes a trip back to her village in Tibet to visit family. 
+                     For the last two years she has been working for Drewla, a Tibetan NGO that provides ways for Tibetans inside Tibet to connect with the diaspora online. 
+                     The trip does not go as planned.
                 </p>
                 <p>
-                    When she reaches the Nepalese-Tibetan border she is immediately taken into detention and held for two months. Chinese authorities interrogate her about her employment in Dharamsala. The young woman denies being involved in any political activities and insists she went to Dharamsala for studies. The authorities present a stack of chat transcripts from conversations she has had online. They explain they have been monitoring Drewla and know about its activities. They eventually release the woman and allow her to travel to her village with a message for her colleagues back in Dharamsala: “You are not welcome to return to Tibet”.
+                    When she reaches the Nepalese-Tibetan border she is immediately taken into detention and held for two months. 
+                    Chinese authorities interrogate her about her employment in Dharamsala. 
+                    The young woman denies being involved in any political activities and insists she went to Dharamsala for studies. 
+                    The authorities present a stack of chat transcripts from conversations she has had online. 
+                    They explain they have been monitoring Drewla and know about its activities. 
+                    They eventually release the woman and allow her to travel to her village with a message for her colleagues back in Dharamsala: “You are not welcome to return to Tibet”.
                 </p>
                 <p>
-                    Drewla was indeed under surveillance. Researchers at the Citizen Lab at the University of Toronto ran an investigation into the networks of Drewla and other Tibetan organizations in 2009 and found they were all infected by malware that connected to GhostNet, a digital espionage network.1 The goal of GhostNet was to maintain clandestine access to computer networks and communications for as long as possible.
+                    Drewla was indeed under surveillance. Researchers at the Citizen Lab at the University of Toronto ran an investigation into the networks of Drewla and other Tibetan organizations 
+                    in 2009 and found they were all infected by malware that connected to GhostNet, a digital espionage network. <sup data-tooltip-target="footnote-1" data-tooltip-trigger="click">1</sup>
+                                         
+                    The goal of GhostNet was to maintain clandestine access to computer networks and communications for as long as possible.
                 </p>
                 <p>
                     Tibetans were not the only targets. GhostNet infiltrated over a thousand computers in over one hundred countries around the world. The command and control servers used to operate the malware were traced back to China, and the targets all had a common connection: geopolitical interest to the People’s Republic of China (PRC). Exposing this network revealed to the world a dark truth that Tibetans had known for years: China uses targeted malware as a form of digital espionage to spy on its opponents.
@@ -43,16 +59,11 @@ const prevurl = "/"
                     The arduous history of digital espionage against the Tibetan community acts as a canary in the coal mine for global civil society. We provide a warning that harnessing the power of information technology for social movements requires vigilant attention to digital security. The stories shared in this report present the harms of digital threats while also offering a message of empowerment that shows how social movements under repression from authoritarianism can persevere and continue to speak truth to power.
                 </p>
             </div>
-
-
         </section>
-
         <Pagination next={nexturl} nextTitle={nextTitle} prev={prevurl} prevTitle={prevTitle} />
-
-
 	</div>
 
-
-
-	
 </Default>
+
+
+<Tooltip id="footnote-1"><p>test</p></Tooltip>
