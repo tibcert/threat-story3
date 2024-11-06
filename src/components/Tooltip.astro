@@ -2,7 +2,7 @@
 const {footnote,id} = Astro.props
 ---
 
-<span id={id} role="tooltip" class=" z-10 invisible  px-3 py-2 text-sm font-medium text-slate-800 bg-gray-200 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+<span id={id} role="tooltip" class=" z-10 invisible  px-3 py-2 text-sm font-medium text-slate-800 bg-gray-200 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700 max-w-60 normal-case	">
     <slot/>
     <span class="tooltip-arrow" data-popper-arrow></span>
 </span>
