@@ -13,10 +13,14 @@ const nexturl = "/page/voices-from-the-community/"
 const prevTitle = "Introduction"
 const prevurl = "/page/introduction"
 
----
-<Default title={title}>
 
-	<div class=" flex flex-col snap-mandatory h-full snap-y w-screen items-center bg-slate-900 justify-around">
+const description = "Exploring the Impact of Cyber Attacks on the Tibetan Community in Exile"
+const image ="screenshot.png"
+
+---
+<Default title={title} description={description} image={image}>
+
+	<div class=" flex flex-col snap-mandatory h-full snap-y w-screen items-center bg-slate-900 justify-around" >
 
 		<section id="intro" class="snap-start w-lvw bg-slate-300 ">
 			<div class=" bg-black  justify-between overflow-hidden flex flex-col items-center">

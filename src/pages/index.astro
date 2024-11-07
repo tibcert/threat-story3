@@ -5,8 +5,12 @@ import ArrowOpen from '../icons/arrow-open.astro'
 import BannerLeftText from "../components/BannerLeftText.astro"
 import BannerRightText from "../components/BannerRightText.astro"
 
+const title = "Report Title"
+const description = "Exploring the Impact of Cyber Attacks on the Tibetan Community in Exile"
+const image ="screenshot.png"
+
 ---
-<Default title="Home">	
+<Default title={title} description={description} image={image}>	
 	<div class=" flex flex-col snap-mandatory h-full snap-y w-screen items-center bg-slate-900 justify-around">
 		<Hero/>
 		<BannerLeftText title="Introduction" img="/images/city.jpg" link="page/introduction">
