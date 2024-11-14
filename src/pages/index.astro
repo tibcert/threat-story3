@@ -12,7 +12,7 @@ const image ="screenshot.png"
 ---
 <Default title={title} description={description} image={image}>	
 	<div class=" flex flex-col snap-mandatory h-full snap-y w-screen items-center bg-slate-900 justify-around">
-		<Hero/>
+		<Hero {title} {description}/>
 		<BannerLeftText title="Introduction" img="/images/city.jpg" link="page/introduction">
 		</BannerLeftText>
 		<BannerRightText title="Background" img="/images/bw.jpg" link="page/background">
