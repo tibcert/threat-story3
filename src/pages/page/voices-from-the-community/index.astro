@@ -2,6 +2,9 @@
 import Pagination from "../../../components/Pagination.astro"
 import Default from "../../../layouts/Default.astro"
 
+import BannerLeftText from "../../../components/BannerLeftText.astro"
+import BannerRightText from "../../../components/BannerRightText.astro"
+
 const title ="Voices From The Community"
 const nextTitle = "The Community Responds"
 const nexturl = "/page/the-community-responds/"
@@ -38,15 +41,15 @@ const prevurl = "/page/background/"
         </div>   
         </section>
         
-        <section class="content bg-slate-900 w-full text-3xl font-oswald text-slate-300 flex">
-            <div class="w-full h-96 bg-slate-950 flex items-center justify-center">
-                <a href="/page/voices-from-the-community/spying"><h1 class="text-4xl uppercase font-medium">Spying During Pivotal Moments For The Tibet Movement</h1></a>
-            </div>
-            <div class="w-full h-96 bg-slate-500 flex items-center justify-center">
-                <a href="/page/voices-from-the-community/a-spectrum-of-threats"><h1 class="text-4xl uppercase font-medium">A Spectrum Of Threats</h1></a>
-            </div>
-      
-        </section>
+        <BannerLeftText title="Spying During Pivotal Moments For The Tibet Movement" link="/page/voices-from-the-community/spying/" img="/images/bw.jpg ">
+
+        </BannerLeftText>
+		
+        <BannerRightText title="A Spectrum Of Threats" link="/page/voices-from-the-community/a-spectrum-of-threats/" img="/images/bw.jpg">
+        </BannerRightText>
+
+
+        
         <Pagination next={nexturl} nextTitle={nextTitle} prev={prevurl} prevTitle={prevTitle} />
 
      
