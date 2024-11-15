@@ -6,7 +6,8 @@ export default {
       fontFamily: {
         'bebas':  ["Bebas Neue", 'sans-serif'],
         'oswald':  ["Oswald", 'sans-serif'],
-      }
+      },
+      
     },
   },
   plugins: [
