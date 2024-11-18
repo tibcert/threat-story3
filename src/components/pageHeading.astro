@@ -4,7 +4,7 @@ const {title} = Astro.props;
 <section id="intro" class="snap-start w-lvw bg-slate-300 ">
     <div class=" bg-black flex flex-col justify-between overflow-hidden pb-20">
         <slot name="link"></slot>
-        <h1 class="px-10 md:px-20 pt-20 font-bold text-5xl sm:text-3xl md:text-9xl bg-gradient-to-r from-slate-700 to-slate-800 via-slate-200  bg-clip-text text-transparent content-center  z-10   [text-shadow:_2px_2px_0_rgb(0_0_0_/_30%)] text-center" transition:name="title1">
+        <h1 class="px-10 md:px-20 pt-20 font-bold text-5xl sm:text-3xl md:text-9xl bg-gradient-to-r from-slate-700 to-slate-800 via-slate-200  bg-clip-text text-transparent content-center  z-10   md:[text-shadow:_2px_2px_0_rgb(0_0_0_/_30%)] text-center" transition:name="title1">
             {title}
         </h1>
         <slot name="subheading"></slot>
