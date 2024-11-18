@@ -1,11 +1,9 @@
 ---
 import BannerLeftText from "../../../../../components/BannerLeftText.astro"
 import BannerRightText from "../../../../../components/BannerRightText.astro"
+import PageHeading from "../../../../../components/pageHeading.astro"
 import Pagination from "../../../../../components/Pagination.astro"
-
 import Default from "../../../../../layouts/Default.astro"
-
-
 
 
 const title = "Spy In Your Pocket"
@@ -19,24 +17,18 @@ const nextUrl = "/page/the-community-responds/"
 <Default title={title}>
 
 	<div class=" flex flex-col snap-mandatory h-full snap-y w-screen items-center bg-slate-900 justify-around">
-
-		<section id="intro" class="snap-start w-lvw bg-slate-300 ">
-			<div class=" bg-black flex flex-col justify-between overflow-hidden">
-                <p class="text-slate-400 text-2xl text-center p-5  m-auto">
-                    <a href="/">Home</a>
-                    <span class="px-2">/</span>
-                    <a href="/page/voices-from-the-community/">Voices From The Community</a>
-                    <span class="px-2">/</span>
-                    <a href="/page/voices-from-the-community/a-spectrum-of-threats/"> A Spectrum of Threat</a>
-                    <span class="px-2">/</span><a>{title}</a>
-                </p>
-                <h1 class="p-20 font-bold text-9xl bg-gradient-to-r from-slate-700 to-slate-800 via-slate-200   bg-clip-text text-transparent content-center  z-10  px-20 [text-shadow:_2px_2px_0_rgb(0_0_0_/_30%)] text-center" transition:name="title1">
-                    {title}
-                    </h1>
-			</div>
-		</section>
-        <section class="content bg-slate-900 w-full text-3xl text-slate-300 font-oswald">
-            <div class="mx-auto w-4/5 p-10 "> 
+        <PageHeading {title}>
+            <p slot="link" class="text-slate-400 text-2xl text-center p-5  m-auto">
+                <a href="/">Home</a>
+                <span class="px-2">/</span>
+                <a href="/page/voices-from-the-community/">Voices From The Community</a>
+                <span class="px-2">/</span>
+                <a href="/page/voices-from-the-community/a-spectrum-of-threats/"> A Spectrum of Threat</a>
+                <span class="px-2">/</span><a>{title}</a>
+            </p>
+        </PageHeading>
+        <section class="content bg-slate-900 w-full text-2xl md:text-3xl text-slate-300 font-oswald">
+            <div class="mx-auto w-full md:w-4/5  p-5 md:p-10 "> 
             <p>
                 In the early 2010s, the rise of smartphones introduced new opportunities for connectivity for the Tibetan community. 
                 The ubiquity of mobile technology connected Tibetans in Tibet and the diaspora in ways that had not been experienced before. 

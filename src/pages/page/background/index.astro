@@ -1,6 +1,7 @@
 ---
 import BannerLeftText from "../../../components/BannerLeftText.astro"
 import BannerRightText from "../../../components/BannerRightText.astro"
+import PageHeading from "../../../components/pageHeading.astro"
 import Pagination from "../../../components/Pagination.astro"
 import Default from "../../../layouts/Default.astro"
 
@@ -19,36 +20,23 @@ const image ="screenshot.png"
 
 ---
 <Default title={title} description={description} image={image}>
-
 	<div class=" flex flex-col snap-mandatory h-full snap-y w-screen items-center bg-slate-900 justify-around" >
-
-		<section id="intro" class="snap-start w-lvw bg-slate-300 ">
-			<div class=" bg-black  justify-between overflow-hidden flex flex-col items-center">
-                <p class="text-slate-400 text-2xl text-center p-5 m-auto">
-                    <a href="/">Home</a><span class="px-2">/</span>
-                    <a href="">Background</a>
-                    
-                </p>   
-                <h1 class="pt-20 font-bold text-9xl bg-gradient-to-r from-slate-700 to-slate-800 via-slate-200 bg-clip-text text-transparent content-center  z-10  px-20 [text-shadow:_2px_2px_0_rgb(0_0_0_/_30%)] text-center" transition:name="title1">
-                    {title}
-                    </h1>
-                <p class="text-white text-center text-3xl pb-20 w-1/2 justify-center">This section tells the early history of how the Tibetan movement came online and the digital threats that soon followed.</p>
-			</div>
-		</section>
-
+	<PageHeading {title}>
+        <p slot="link" class="text-slate-400 text-2xl text-center p-5 m-auto">
+            <a href="/">Home</a><span class="px-2">/</span>
+            <a href="">Background</a> 
+        </p>  
+        <div slot="subheading" class="text-white  text-center text-3xl pb-20 sm:w-full md:w-1/2 lg:w-full flex justify-center"> 
+            <p class="w-full px-5 md:w-1/2 ">
+                This section provides an overview of the digital threats Tibetan organizations have experienced, which demonstrates how the threats evolve and adapt overtime. 
+            </p>
+        </div> 
+    </PageHeading>
         <BannerRightText title="The Tibet Movement Goes Online" link="/page/background/the-tibet-movement-goes-online/" img="/images/bw.jpg">
         </BannerRightText>
+        
         <BannerLeftText title="Early Digital Threats Against The Community" link="/page/background/early-digital-threats/" img="/images/bw.jpg ">
-
         </BannerLeftText>
-
         <Pagination next={nexturl} nextTitle={nextTitle} prev={prevurl} prevTitle={prevTitle} />
-
-     
-
-	</div>
-
-
-
-	
+	</div>	
 </Default>

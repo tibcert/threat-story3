@@ -1,5 +1,6 @@
 ---
 
+import PageHeading from "../../../../components/pageHeading.astro"
 import Pagination from "../../../../components/Pagination.astro"
 import Quote from "../../../../components/Quote.astro"
 import Video from "../../../../components/Video.astro"
@@ -15,10 +16,8 @@ const prevurl = "/page/voices-from-the-community/spying/surveillance-harassment-
 <Default title={title}>
 
 	<div class=" flex flex-col snap-mandatory h-full snap-y w-screen items-center bg-slate-900 justify-around">
-
-		<section id="intro" class="snap-start w-lvw bg-slate-300 ">
-			<div class=" bg-black flex flex-col justify-between overflow-hidden">
-                <p class="text-slate-400 text-2xl text-center p-5  m-auto">
+            <PageHeading {title}>
+                <p slot="link" class="text-slate-400 text-2xl text-center p-5  m-auto">
                     <a href="/">Home</a>
                     <span class="px-2">/</span>
                     <a href="/page/voices-from-the-community/">Voices From The Community</a>
@@ -26,15 +25,10 @@ const prevurl = "/page/voices-from-the-community/spying/surveillance-harassment-
                     <a href="/page/voices-from-the-community/spying/"> Spying During The Pivotal Moments For THe Tibet Movement</a>
                     <span class="px-2">/</span><a>{title}</a>
                 </p>
-                <h1 class="p-20 font-bold text-9xl bg-gradient-to-r from-slate-700 to-slate-800 via-slate-200    bg-clip-text text-transparent content-center  z-10  px-20 [text-shadow:_2px_2px_0_rgb(0_0_0_/_30%)] text-center" transition:name="title1">
-                    {title}
-                    </h1>
-
-			</div>
-		</section>
-        <section class="content bg-slate-900 w-full text-3xl font-oswald text-slate-300 leading-relaxed">
+            </PageHeading>
+        <section class="content bg-slate-900 w-full text-2xl md:text-3xl font-oswald text-slate-300 leading-relaxed">
             
-        <div class="mx-auto w-4/5 p-10">
+        <div class="mx-auto w-full md:w-4/5  p-5 md:p-10 ">
             <p>In the aftermath of the 2008 Beijing Olympics, Chinese authorities waged a brutal crackdown in Tibet, leading to arrests of thousands of Tibetans and the deaths of over 100 Tibetans. Beyond those involved in the 2008 protests, Tibetan writers, singers, and educators became prime targets of repression. A report from the International Campaign for Tibet (ICT) published on March 9, 2009 revealed that around 600 Tibetans have been detained as political prisoners since March 2008. </p>
             <p>2009 marked a somber turn for Tibetans when a 20-year-old monk from Kirti monastery named Lobsang Tashi (or Tapey to his friends) self-immolated in protest against Chinese policies. As his body burned in protest, Chinese police shot him and took him into custody. His protest was understood as a plea for international attention to China’s oppressive measures in Tibet. </p>
             <p>Over the next nine years, 158 more Tibetans  self-immolated, calling for the  return of His Holiness the Dalai Lama and freedom for Tibet. This unprecedented series of self immolations was a major turning point for the Tibet movement as it demonstrated the extreme levels of repression Tibetans in Tibet were under and the measures they were prepared to take to bring attention to the dire human rights situation.</p>

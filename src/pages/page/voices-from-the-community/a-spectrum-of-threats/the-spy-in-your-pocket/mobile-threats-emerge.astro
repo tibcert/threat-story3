@@ -3,6 +3,7 @@ import Pagination from "../../../../../components/Pagination.astro"
 import Quote from "../../../../../components/Quote.astro"
 import Default from "../../../../../layouts/Default.astro"
 import Video from "../../../../../components/Video.astro"
+import PageHeading from "../../../../../components/pageHeading.astro"
 
 
 const title ="The Mobile Threats Emerge"
@@ -13,21 +14,16 @@ const prevurl = "/page/voices-from-the-community/a-spectrum-of-threats/"
 ---
 <Default title={title}>
 	<div class=" flex flex-col snap-mandatory h-full snap-y w-screen items-center bg-slate-900 justify-around">
-		<section id="intro" class="snap-start w-lvw bg-slate-300 ">
-			<div class=" bg-black  justify-between overflow-hidden flex flex-col items-center">
-				<p class="text-slate-400 text-2xl text-center p-5  m-auto">
-                    <a href="/">Home</a><span class="px-2">/</span><a href="/page/voices-from-the-community/"> Voices From The Community</a>
-                    <span class="px-2">/</span><a href="/page/voices-from-the-community/a-spectrum-of-threats/"> A Spectrum Of Threats</a>
-                    <span class="px-2">/</span><a href="/page/voices-from-the-community/a-spectrum-of-threats/the-spy-in-your-pocket/"> The Spy In Your Pocket/</a>
-					<span class="px-2">/</span><a>{title}</a>
-                </p>
-				<h1 class="py-20 font-bold text-9xl bg-gradient-to-r from-slate-700 to-slate-800 via-slate-200   bg-clip-text text-transparent content-center  z-10  px-20 [text-shadow:_2px_2px_0_rgb(0_0_0_/_30%)] text-center" transition:name="title1">
-                    {title}
-                    </h1>
-			</div>
-		</section>
-		<section class="content bg-slate-900 w-full text-3xl font-oswald text-slate-300 leading-relaxed">
-			<div class="mx-auto w-4/5 p-10">
+		<PageHeading {title}>
+            <p slot="link" class="text-slate-400 text-2xl text-center p-5  m-auto">
+                <a href="/">Home</a><span class="px-2">/</span><a href="/page/voices-from-the-community/"> Voices From The Community</a>
+                <span class="px-2">/</span><a href="/page/voices-from-the-community/a-spectrum-of-threats/"> A Spectrum Of Threats</a>
+                <span class="px-2">/</span><a href="/page/voices-from-the-community/a-spectrum-of-threats/the-spy-in-your-pocket/"> The Spy In Your Pocket/</a>
+                <span class="px-2">/</span><a>{title}</a>
+            </p>
+        </PageHeading>
+		<section class="content bg-slate-900 w-full text-2xl md:text-3xl font-oswald text-slate-300 leading-relaxed">
+			<div class="mx-auto w-full md:w-4/5  p-5 md:p-10 ">
 			<p>
                 In 2011, WeChat, a mobile messaging application, launched and has become the most popular communications platform in China and quickly spread to Tibetan populations. 
                 The popularity of WeChat became a concern due to the app being under the control of a Chinese company and therefore subject to information controls dictated by the Chinese government. 

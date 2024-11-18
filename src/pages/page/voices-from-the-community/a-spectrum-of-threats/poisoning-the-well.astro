@@ -3,6 +3,7 @@ import Pagination from "../../../../components/Pagination.astro"
 import Quote from "../../../../components/Quote.astro"
 import Default from "../../../../layouts/Default.astro"
 import Video from "../../../../components/Video.astro"
+import PageHeading from "../../../../components/pageHeading.astro"
 
 
 
@@ -17,24 +18,18 @@ const nextUrl = "/page/voices-from-the-community/a-spectrum-of-threats/digital-a
 <Default title={title}>
 
 	<div class=" flex flex-col snap-mandatory h-full snap-y w-screen items-center bg-slate-900">
-
-		<section id="intro" class="snap-start w-lvw bg-slate-300 ">
-			<div class=" bg-black flex flex-col justify-between overflow-hidden">
-                <p class="text-slate-400 text-2xl text-center p-5  m-auto">
-                    <a href="/">Home</a>
-                    <span class="px-2">/</span>
-                    <a href="/page/voices-from-the-community/">Voices From The Community</a>
-                    <span class="px-2">/</span>
-                    <a href="/page/voices-from-the-community/a-spectrum-of-threats/"> A Spectrum of Threat</a>
-                    <span class="px-2">/</span><a>{title}</a>
-                </p>
-                <h1 class="p-20 font-bold text-9xl bg-gradient-to-r from-slate-700 to-slate-800 via-slate-200  bg-clip-text text-transparent content-center  z-10  px-20 [text-shadow:_2px_2px_0_rgb(0_0_0_/_30%)] text-center" transition:name="title1">
-                    {title}
-                    </h1>
-			</div>
-		</section>
-        <section class="content bg-slate-900 w-full text-3xl text-slate-300 font-oswald leading-relaxed ">
-            <div class="mx-auto w-4/5 p-10 ">
+        <PageHeading {title}>
+            <p slot="link" class="text-slate-400 text-2xl text-center p-5  m-auto">
+                <a href="/">Home</a>
+                <span class="px-2">/</span>
+                <a href="/page/voices-from-the-community/">Voices From The Community</a>
+                <span class="px-2">/</span>
+                <a href="/page/voices-from-the-community/a-spectrum-of-threats/"> A Spectrum of Threat</a>
+                <span class="px-2">/</span><a>{title}</a>
+            </p>
+        </PageHeading>
+        <section class="content bg-slate-900 w-full text-2xl md:text-3xl text-slate-300 font-oswald leading-relaxed ">
+            <div class="mx-auto w-full md:w-4/5  p-5 md:p-10 ">
                 
                <p>
                 Targeted malware is not only delivered through emails or messages. It can also spread through the community by infecting trusted websites. Like a village well, websites for Tibetan media and organizations serve as vital resources for the community. If you poison the well, you poison the village. A “watering hole attack” describes this type of action online. Attackers get unauthorized access to websites and infect them with malware. When visitors visit the website they are at risk of their computer being infected by the malware and giving access to the attackers. The modus operandi of these attacks is particularly insidious, as compromised websites automatically download malware onto visitors’ devices without their knowledge. This method bypasses the need for attackers to target individuals individually, streamlining the process, and maximizing the impact.
