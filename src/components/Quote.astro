@@ -4,7 +4,7 @@ const {img,person,title} = Astro.props;
 import QuoteClose from "../icons/quoteClose.astro";
 import QuoteOpen from "../icons/quoteOpen.astro";
 ---
-
+<!-- 
 <figure class=" bg-slate-800 p-3 my-5 w-full md:w-4/5 mx-auto relative shadow-md border-2 border-slate-700 overflow-hidden">
     <QuoteOpen/>
     <blockquote class="z-2"> 
@@ -18,6 +18,24 @@ import QuoteOpen from "../icons/quoteOpen.astro";
         <div class="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-300 dark:divide-gray-700">
             <cite class="pe-3 font-medium text-gray-200 text-lg">{person}</cite>
             <cite class="ps-3 text-sm text-gray-500 dark:text-gray-400">{title}</cite>
+        </div>
+    </figcaption>
+</figure> -->
+
+
+<figure class=" bg-slate-800 p-3 my-5 w-full md:w-4/5 mx-auto relative shadow-md border-2 border-slate-700 overflow-hidden">
+    <QuoteOpen/>
+    <blockquote class="z-2"> 
+        <div class=" relative z-10 testamonial text-sm md:text-xl font-normal italic text-slate-300 dark:text-white leading-relaxed">
+            <slot>
+        </div> 
+    </blockquote>
+    <QuoteClose/>
+    <figcaption class="relative flex items-center mt-2 space-x-3 rtl:space-x-reverse z-10 ">
+        <img class="w-20 h-20 rounded-full" src={img} alt="profile picture">
+        <div class=" items-center">
+            <cite class="pe-3 font-medium text-gray-200 text-lg">{person}</cite><br>
+            <cite class="pe-3 text-sm text-gray-500 dark:text-gray-400 line-clamp-1 ">{title}</cite> 
         </div>
     </figcaption>
 </figure>
