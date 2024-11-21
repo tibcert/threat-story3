@@ -3,6 +3,7 @@
 import PageHeading from "../../../../components/pageHeading.astro"
 import Pagination from "../../../../components/Pagination.astro"
 import Quote from "../../../../components/Quote.astro"
+import Tooltip from "../../../../components/Tooltip.astro"
 import Video from "../../../../components/Video.astro"
 import Default from "../../../../layouts/Default.astro"
 
@@ -29,8 +30,8 @@ const prevurl = "/page/voices-from-the-community/spying/surveillance-harassment-
         <section class="content bg-slate-900 w-full text-2xl md:text-3xl font-oswald text-slate-300 leading-relaxed">
             
         <div class="mx-auto w-full md:w-4/5  p-5 md:p-10 ">
-            <p>In the aftermath of the 2008 Beijing Olympics, Chinese authorities waged a brutal crackdown in Tibet, leading to arrests of thousands of Tibetans and the deaths of over 100 Tibetans. Beyond those involved in the 2008 protests, Tibetan writers, singers, and educators became prime targets of repression. A report from the International Campaign for Tibet (ICT) published on March 9, 2009 revealed that around 600 Tibetans have been detained as political prisoners since March 2008. </p>
-            <p>2009 marked a somber turn for Tibetans when a 20-year-old monk from Kirti monastery named Lobsang Tashi (or Tapey to his friends) self-immolated in protest against Chinese policies. As his body burned in protest, Chinese police shot him and took him into custody. His protest was understood as a plea for international attention to China’s oppressive measures in Tibet. </p>
+            <p>In the aftermath of the 2008 Beijing Olympics, Chinese authorities waged a brutal crackdown in Tibet, leading to arrests of thousands of Tibetans and the deaths of over 100 Tibetans<sup data-tooltip-target="footnote-11" data-tooltip-trigger="click" class="hover:text-slate-400">11</sup>. Beyond those involved in the 2008 protests, Tibetan writers, singers, and educators became prime targets of repression<sup data-tooltip-target="footnote-12" data-tooltip-trigger="click" class="hover:text-slate-400">12</sup>. A report from the International Campaign for Tibet (ICT) published on March 9, 2009 revealed that around 600 Tibetans have been detained as political prisoners since March 2008<sup data-tooltip-target="footnote-13" data-tooltip-trigger="click" class="hover:text-slate-400">13</sup>. </p>
+            <p>2009 marked a somber turn for Tibetans when a 20-year-old monk from Kirti monastery named Lobsang Tashi (or Tapey to his friends) self-immolated in protest against Chinese policies. As his body burned in protest, Chinese police shot him and took him into custody.<sup data-tooltip-target="footnote-14" data-tooltip-trigger="click" class="hover:text-slate-400">14</sup> His protest was understood as a plea for international attention to China’s oppressive measures in Tibet. </p>
             <p>Over the next nine years, 158 more Tibetans  self-immolated, calling for the  return of His Holiness the Dalai Lama and freedom for Tibet. This unprecedented series of self immolations was a major turning point for the Tibet movement as it demonstrated the extreme levels of repression Tibetans in Tibet were under and the measures they were prepared to take to bring attention to the dire human rights situation.</p>
             <p>During this time, like all leaders in the Tibet Movement, Lhadon Tethong, the Director of Tibet Action Institute paid close attention to the self-immolations and worked tirelessly to bring international attention to them.</p>
             <p>In February 2012, Lhadon received an email that appeared to come from Cheng Li, a notable Chinese-American scholar who was Director of Research at The Brookings Institution, a Washington DC-based think tank. In the email, Mr. Li explained to Lhadon that he would be attending an academic conference on religious research in Shanghai and would like to learn more about Tibetan self immolations. The email included a spreadsheet that Mr. Li explained listed Tibetans who had self-immolated since 2009. He asked Lhadon to review the document for him. </p>
@@ -41,7 +42,7 @@ const prevurl = "/page/voices-from-the-community/spying/surveillance-harassment-
                 <p>I remembered thinking that this was good, a well crafted, researched targeted attack and I wouldn't say I was impressed but maybe my blood ran a little cold recognizing how sophisticated  cyber attacks can be and there was no question to deny that it must be a Chinese government backed attack.</p>
             </Quote>
             <p>
-                Lhadon sent the email to researchers at the Citizen Lab who verified the attachment contained malware designed to infect computers running Windows. This finding confirmed Lhadon’s suspicions the email was a clever attempt at breaking into her computer and spying on her.
+                Lhadon sent the email to researchers at the Citizen Lab who verified the attachment contained malware designed to infect computers running Windows.<sup data-tooltip-target="footnote-15" data-tooltip-trigger="click" class="hover:text-slate-400">15</sup> This finding confirmed Lhadon’s suspicions the email was a clever attempt at breaking into her computer and spying on her.
             </p>
             <p>Following this revelation, Lhadon and the Citizen Lab researchers devised their own ruse to turn the table on the attackers. Lhadon wrote back to “Cheng Li” with some information about the type of computer she was using as bait that the attackers may be interested in.</p>
           
@@ -63,18 +64,26 @@ const prevurl = "/page/voices-from-the-community/spying/surveillance-harassment-
             </blockquote>
             <Video src="https://tibcert.org/threat-story/images/lhadon.mp4"/>
         </div>   
-       
         </section>
-       
-	
-
+    
         <Pagination next={nexturl} nextTitle={nextTitle} prev={prevurl} prevTitle={prevTitle} />
 
-     
-
 	</div>
-
-
-
 	
 </Default>
+
+<Tooltip id="footnote-11">
+      <a href="https://tibetnetwork.org/tibet-protests-2008" target="_blank">“Tibet Protest 2008”, International Tibet Network</a>
+</Tooltip>
+<Tooltip id="footnote-12">
+    <a href="https://savetibet.org/a-raging-storm/" target="_blank">“A Raging Storm”, International Campaign for Tibet, May 19, 2010</a>
+</Tooltip>
+<Tooltip id="footnote-13">
+    <a href="https://savetibet.org/great-mountain-burned-by-fire/" target="_blank">A Great Mountain Burned by Fire: China’s Crackdown on TIbet”, International Campaign for Tibet</a>
+</Tooltip>
+<Tooltip id="footnote-14">
+    <a href="https://highpeakspureearth.com/remembering-the-first-person-who-self-immolated-inside-tibet-tapey-by-woeser" target="_blank"> “Remembering the First Person Who Self-Immolated Inside Tibet, Tapey” by Woeser”, High Peaks Pure Earth, March 8, 2012</a>
+</Tooltip>
+<Tooltip id="footnote-15">
+    <a href="https://targetedthreats.net/" target="_blank"> “Remembering the Communities @ Risk: Targeted Digital Threats Against Civil Society”, Citizen Lab, November 11, 2014</a>
+</Tooltip>

@@ -2,6 +2,7 @@
 import PageHeading from "../../../../../components/pageHeading.astro"
 import Pagination from "../../../../../components/Pagination.astro"
 import Quote from "../../../../../components/Quote.astro"
+import Tooltip from "../../../../../components/Tooltip.astro"
 import Video from "../../../../../components/Video.astro"
 import Default from "../../../../../layouts/Default.astro"
 
@@ -32,7 +33,7 @@ const nextUrl = "/page/the-community-responds/"
 <section class="content bg-slate-900 w-full text-2xl md:text-3xl text-slate-300 font-oswald leading-relaxed">
     <div class="mx-auto w-full md:w-4/5  p-5 md:p-10 "> 
         <Quote img="/media/namgyal-dolkar.jpeg" title="Members of Parliament" person="Namgyal Dolkar">
-            <p>Considering the work we do, which directly revolves around exposing China for its various forms of human rights abuses in Tibet, and also because similar viruses I’ve received [have targeted] other Tibetan activist groups working on the issue, it is clear it is a work of the Chinese Communist government.</p>
+            <p>Considering the work we do, which directly revolves around exposing China for its various forms of human rights abuses in Tibet, and also because similar viruses I’ve received [have targeted] other Tibetan activist groups working on the issue, it is clear it is a work of the Chinese Communist government.<sup data-tooltip-target="footnote-23" data-tooltip-trigger="click">23</sup></p>
         </Quote>
     <p>
         The sophistication of social engineering used to lure targets to install mobile malware and the technical sophistication of the malware itself has significantly escalated in recent years.
@@ -49,7 +50,7 @@ const nextUrl = "/page/the-community-responds/"
           Namgyal Dolkar often receives unsolicited messages from human rights organizations seeking her assistance so this message did not seem out of the ordinary. 
           She replied to “Jason” who proceeded to describe a recent self-immolation in Tibet, 
           asked her to help verify the incident for an upcoming Amnesty International report on human rights in China, and sent a link. 
-          Namgyal Dolkar forwarded the message to TibCERT who in collaboration with researchers at the Citizen Lab discovered the link connected to exploits designed to infect iPhone and Android devices with malware.
+          Namgyal Dolkar forwarded the message to TibCERT who in collaboration with researchers at the Citizen Lab discovered the link connected to exploits designed to infect iPhone and Android devices with malware.<sup data-tooltip-target="footnote-22" data-tooltip-trigger="click" class="hover:text-slate-400">22</sup>
     </p>
     <p>
         Amnesty International does not employ anyone named Jason Wu. The message was very carefully crafted to trick Namgyal Dolkar into clicking the link, 
@@ -65,15 +66,14 @@ const nextUrl = "/page/the-community-responds/"
 
     </div>        
 </section>
-
-    
         <Pagination prevTitle={PrevTitle} prev={prevtUrl} nextTitle={nextTitle} next={nextUrl} home="/">
-
-
 	</div>
 
-
-
-
-	
 </Default>
+
+<Tooltip id="footnote-22">
+    <a href="https://citizenlab.ca/2019/09/poison-carp-tibetan-groups-targeted-with-1-click-mobile-exploits/" target="_blank">“Tibetan Targeted by Spyware for iPhone and Android”, TibCERT, September 24, 2019</a>
+</Tooltip>
+<Tooltip id="footnote-23">
+    <a href="https://tibet.net/androids-and-iphones-hacked-with-just-one-whatsapp-click-and-tibetans-are-under-assault/" target="_blank">Android and iPhones Hacked with Just One WhatsApp Click - and Tibetans are Under Assault”, Central Tibetan Administration, September 25, 2019</a>
+</Tooltip>
