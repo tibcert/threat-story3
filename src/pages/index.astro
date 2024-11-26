@@ -4,14 +4,19 @@ import Hero from '../components/Heropage.astro'
 import ArrowOpen from '../icons/arrow-open.astro'
 import BannerLeftText from "../components/BannerLeftText.astro"
 import BannerRightText from "../components/BannerRightText.astro"
+import Pagination from "../components/Pagination.astro"
+import PaginationBlank from "../components/PaginationBlank.astro"
 
 const title = "Digital Disruption:"
 const description = "Exploring the Impact of Cyber Attacks on the Tibetan Community in Exile"
 const image ="screenshot.png"
 
+
+
+
 ---
 <Default title={title} description={description} image={image}>	
-	<div class=" flex flex-col snap-mandatory h-full snap-y w-screen items-center bg-slate-900 justify-around pb-48 sm:pb-48 md:pb-0">
+	<div class=" flex flex-col snap-mandatory h-full snap-y w-screen items-center bg-slate-900 justify-around pb-44 sm:pb-10 md:pb-0">
 		<Hero {title} tagline={description}/>
 		<BannerLeftText title="Introduction" img="/images/city.jpg" link="page/introduction">
 		</BannerLeftText>
@@ -24,7 +29,7 @@ const image ="screenshot.png"
 		</BannerRightText>
 
 		<BannerLeftText title="Voices From The Community" img="/images/uprising.jpg" link="page/voices-from-the-community/">
-			<div class="flex flex-col md:flex-row text-sm sm:text-sm md:text-2xl text-slate-600 items-left md:items-end justify-start md:px-20 sm:p-0">
+			<div class="flex flex-col md:flex-row text-sm sm:text-sm md:text-2xl text-slate-600 items-left md:items-end justify-start md:px-20 pb-10 lg:pb-10">
 				<a href="page/voices-from-the-community/spying/" class="flex items-center hover:text-slate-500 justify-start" transition:name="heading1"><ArrowOpen/>Spying During The Pivotal Moments For THe Tibet Movement</a>
 				<a href="/page/voices-from-the-community/a-spectrum-of-threats/" class="flex items-center hover:text-slate-500" transition:name="heading2"><ArrowOpen/>A Spectrum Of Threats</a>
 			</div>
@@ -81,11 +86,12 @@ const image ="screenshot.png"
 			</div>
 		</section> -->
 
-
+		<PaginationBlank  />
 	</div>
 
 
 
 
 	
+
 </Default>
