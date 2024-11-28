@@ -11,16 +11,16 @@ const {prev,next, prevTitle, nextTitle, home } = Astro.props;
 
                 <div class="group overflow-hidden w-2/5  md:flex justify-center md:justify-end">
                     <a href={prev} class="titlePrev flex-none md:flex justify-end">
-                        <h1 class="text-md md:text-4xl text-slate-500 group-hover:text-slate-400 text-center  md:p-20 md:pr-5">{prevTitle} </h1><PrevIcon/> </a>
+                        <h1 class="text-md md:text-4xl text-slate-500 group-hover:text-slate-400 text-center  md:p-20 md:pr-5 md:w-96">{prevTitle} </h1><PrevIcon/> </a>
                 </div>
 
                 <div class="w-1/5 rounded-lg  flex items-center justify-center">
                     <a href="/"><HomeIcon/></a>
                 </div>
 
-                <div class="group overflow-hidden w-2/5 md:flex justify-center md:justify-start">
+                <div class="group overflow-hidden w-2/5 md:flex justify-center md:justify-start ">
                     <a href={next} class="titleNext flex-none md:flex flex-row-reverse justify-start items-center ">
-                        <h1 class="text-md md:text-4xl text-slate-500 group-hover:text-slate-400 text-center  md:p-20 md:pl-5 ">{nextTitle}</h1><NextIcon/></a>
+                        <h1 class="text-md md:text-4xl text-slate-500 group-hover:text-slate-400 text-center  md:p-20 md:pl-5 md:w-96">{nextTitle}</h1><NextIcon/></a>
                 </div>
 
             </div>
