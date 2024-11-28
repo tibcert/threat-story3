@@ -1,4 +1,5 @@
 ---
+import SidebarNav from "./SidebarNav.astro";
 const {title} = Astro.props;
 ---
 <!-- <section id="intro" class="snap-start w-lvw bg-slate-300 ">
@@ -21,3 +22,5 @@ const {title} = Astro.props;
     <div class="absolute w-full h-full  bg-slate-800/70 backdrop-grayscale backdrop-blur-none top-0 z-0 "></div>
 
 </section>
+
+<SidebarNav {title}/>
