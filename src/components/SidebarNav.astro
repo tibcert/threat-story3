@@ -14,122 +14,121 @@ const {title} = Astro.props;
  <!-- drawer component -->
  <div id="drawer-navigation" class="fixed top-0 left-0 z-40 w-1/2 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-blue-900/50 backdrop-blur-md dark:bg-gray-800" tabindex="-1" aria-labelledby="drawer-navigation-label">
      <!-- <h5 id="drawer-navigation-label" class="text-base font-semibold text-gray-500 uppercase dark:text-gray-400">Menu</h5> -->
-     <button type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-200 rounded-lg text-sm p-1.5 absolute top-2.5 end-2.5 inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" >
-         <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+     <button type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation" class="text-gray-400 bg-transparent  rounded-lg text-sm p-1.5 absolute top-2.5 end-2.5 inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" >
+         <svg aria-hidden="true" class="w-10 h-10 fill-yellow-400 hover:fill-yellow-300" fill="" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
          <span class="sr-only">Close menu</span>
      </button>
    <div class="py-4 overflow-y-auto font-oswald uppercase text-2xl">
        <ul class=" text-white">
-          <li class="py-2  ms-2">
+          <li class="py-2  ms-0">
             {title == "Introduction" ? 
             (<p  class="flex items-center p-2  group text-slate-400 border-l-4 px-2 border-x-yellow-500 ">Introduction</p>) : 
-            (<a href="/page/introduction" class="">Introduction</a>)
+            (<a href="/page/introduction" class="hover:text-slate-400">Introduction</a>)
             }  
           </li>
-          <li class="py-2  ms-2">
+          <li class="py-2  ms-0  ">
             {title == "Background" ? 
             (<p  class="flex items-center p-2  group text-slate-400 border-l-4 px-2 border-x-yellow-500 ">{title}</p>) : 
-            (<a href="/page/background" class="">Background</a>)
+            (<a href="/page/background" class="hover:text-slate-400">Background</a>)
             } 
-             <ul>
-                <li class="py-2 ms-4">
+           
+                <li class="py-2 ms-4 border-l border-slate-600 pl-3">
                     {title == "The Tibet Movement Goes Online" ? 
                     (<p  class="flex items-center   group text-slate-400 text-2xl border-l-4 px-2 border-x-yellow-500">The Tibet Movement Goes Online</p>) : 
-                    (<a href="/page/background/the-tibet-movement-goes-online/" class="text-2xl">The Tibet Movement Goes Online</a>)
+                    (<a href="/page/background/the-tibet-movement-goes-online/" class="text-2xl hover:text-slate-400">The Tibet Movement Goes Online</a>)
                     }
-                <li class="py-2  ms-4 ">
+                <li class="py-2  ms-4 border-l border-slate-600 pl-3">
                     {title == "Early Digital Threats Against The Community" ? 
                     (<p  class="flex items-center   group text-slate-400 border-l-4 px-2 border-x-yellow-500 ">Early Digital Threats Against The Community</p>) : 
-                    (<a href="/page/background/early-digital-threats/">Early Digital Threats Against The Community</a>)
+                    (<a href="/page/background/early-digital-threats/" class="hover:text-slate-400">Early Digital Threats Against The Community</a>)
                     } 
-             </ul>
+             
           </li>
-          <li class="py-2  ms-2">
+          <li class="py-2  ms-0  ">
                 {title == "Voices From The Community" ? 
                 (<p  class="flex items-center   group text-slate-400 border-l-4 px-2 border-x-yellow-500  ">Voices From The Community</p>) : 
-                (<a href="/page/voices-from-the-community/" class="">Voices From The Community</a>)
+                (<a href="/page/voices-from-the-community/" class="hover:text-slate-400">Voices From The Community</a>)
                 } 
              <ul>
-                <li class="py-2 ms-4">
+                <li class="py-2 ms-6 ">
                     {title == "Spying During Pivotal Moments For The Tibet" ? 
                     (<p  class="flex items-center   group text-slate-400 text-2xl border-l-4 px-2 border-x-yellow-500 ">Spying During Pivotal Moments For The Tibet</p>) : 
-                    (<a href="/page/voices-from-the-community/spying/" class="text-2xl">Spying During Pivotal Moments For The Tibet</a>)
+                    (<a href="/page/voices-from-the-community/spying/" class="text-2xl hover:text-slate-400">Spying During Pivotal Moments For The Tibet</a>)
                     } 
-                    <ul class="ms-6">
-                        <li class="py-2 ">
+                    
+                        <li class="py-2 ms-8 border-l border-slate-600 pl-3">
                             {title == "Surveillance, Harassment, And The 2008 Beijing Olympics" ? 
-                                (<p  class="flex items-center   group text-slate-400 border-l-4 px-2 border-x-yellow-500 ">Surveillance, Harassment, And The 2008 Beijing Olympics</p>) : 
-                                (<a href="/page/voices-from-the-community/spying/surveillance-harassment-&-2008-beihing-olympics">Surveillance, Harassment, And The 2008 Beijing Olympics</a>)
+                                (<p  class="flex items-center group text-slate-400 border-l-4 px-2 border-x-yellow-500 ">Surveillance, Harassment, And The 2008 Beijing Olympics</p>) : 
+                                (<a href="/page/voices-from-the-community/spying/surveillance-harassment-&-2008-beihing-olympics" class="hover:text-slate-400">Surveillance, Harassment, And The 2008 Beijing Olympics</a>)
                                 }
                         </li>
-                        <li class="py-2 ">
+                        <li class="py-2 ms-8 border-l border-slate-600 pl-3">
                             {title == "Spying And Self Immolations In Tibet" ? 
                                 (<p  class="flex items-center   group text-slate-400 border-l-4 px-2 border-x-yellow-500 ">Spying And Self Immolations In Tibet</p>) : 
-                                (<a href="/page/voices-from-the-community/spying/spying-and-self-immolation-in-tibet/">Spying And Self Immolations In Tibet</a>)
+                                (<a href="/page/voices-from-the-community/spying/spying-and-self-immolation-in-tibet/" class="hover:text-slate-400">Spying And Self Immolations In Tibet</a>)
                                 }
                         </li>
-                        <li class="py-2 ">
+                        <li class="py-2 ms-8 border-l border-slate-600 pl-3">
                             {title == "Spying On The Tibetan Movement During Covid" ? 
                                 (<p  class="flex items-center   group text-slate-400 border-l-4 px-2 border-x-yellow-500 ">Spying On The Tibetan Movement During Covid</p>) : 
-                                (<a href="/page/voices-from-the-community/spying/spying-on-the-tibetan-movement-during-covid">Spying On The Tibetan Movement During Covid</a>)
+                                (<a href="/page/voices-from-the-community/spying/spying-on-the-tibetan-movement-during-covid" class="hover:text-slate-400">Spying On The Tibetan Movement During Covid</a>)
                                 }
                         </li>
-                    </ul>
+                   
                 </li>
-                <li class="py-2 ms-6">
+                <li class="py-2 ms-6 ">
                     {title == "A SPECTRUM OF THREATS" ? 
                     (<p  class="flex items-center   group text-slate-400 text-2xl border-l-4 px-2 border-x-yellow-500 ">A Spectrum Of Threats</p>) : 
-                    (<a href="/page/voices-from-the-community/a-spectrum-of-threats" class="text-2xl">A Spectrum Of Threats</a>)
+                    (<a href="/page/voices-from-the-community/a-spectrum-of-threats" class="text-2xl hover:text-slate-400">A Spectrum Of Threats</a>)
                     }
-                    <ul class="ms-4">
-                        <li class="py-2 ">
+                    
+                        <li class="py-2 ms-8 border-l border-slate-600 pl-3">
                             {title == "Impersonation & Trust" ? 
                              (<p  class="flex items-center   group text-slate-400 border-l-4 px-2 border-x-yellow-500 ">Impersonation & Trust</p>) : 
-                             (<a href="/page/voices-from-the-community/a-spectrum-of-threats/impersonation-&-trust" class="">Impersonation & Trust</a>)
+                             (<a href="/page/voices-from-the-community/a-spectrum-of-threats/impersonation-&-trust" class="hover:text-slate-400">Impersonation & Trust</a>)
                             }
                         </li>
-                        <li class="py-2 ">
+                        <li class="py-2 ms-8 border-l border-slate-600 pl-3">
                             {title == "Poisoning The Well: Using Tibetan Websites Against The Community" ? 
                              (<p  class="flex items-center   group text-slate-400 border-l-4 px-2 border-x-yellow-500 ">Poisoning The Well: Using Tibetan Websites Against The Community</p>) : 
-                             (<a href="/page/voices-from-the-community/a-spectrum-of-threats/poisoning-the-well/" class="">Poisoning The Well: Using Tibetan Websites Against The Community</a>)
+                             (<a href="/page/voices-from-the-community/a-spectrum-of-threats/poisoning-the-well/" class="hover:text-slate-400">Poisoning The Well: Using Tibetan Websites Against The Community</a>)
                             }
                         </li>
-                        <li class="py-2 ">
+                        <li class="py-2 ms-8 border-l border-slate-600 pl-3">
                             {title == "Digital Attacks As Censorship" ? 
                             (<p  class="flex items-center   group text-slate-400 border-l-4 px-2 border-x-yellow-500 ">Digital Attacks As Censorship</p>) : 
-                            (<a href="/page/voices-from-the-community/a-spectrum-of-threats/digital-attacks-as-censorship/" class="">Digital Attacks As Censorship</a>)
+                            (<a href="/page/voices-from-the-community/a-spectrum-of-threats/digital-attacks-as-censorship/" class="hover:text-slate-400">Digital Attacks As Censorship</a>)
                            }
                         </li>
-                        <li class="py-2 ">
+                        <li class="py-2 ms-8 border-l border-slate-600 pl-3">
                             {title == "Spy In Your Pocket" ? 
                             (<p  class="flex items-center   group text-slate-400 border-l-4 px-2 border-x-yellow-500 ">Spy In Your Pocket</p>) : 
-                            (<a href="/page/voices-from-the-community/a-spectrum-of-threats/the-spy-in-your-pocket/" class="">Spy In Your Pocket</a>)
+                            (<a href="/page/voices-from-the-community/a-spectrum-of-threats/the-spy-in-your-pocket/" class="hover:text-slate-400">Spy In Your Pocket</a>)
                            }
-                            <ul class="ms-6">
-                                <li class="py-2 ">
+                                <li class="py-2 ms-14 border-l border-slate-600 pl-3">
                                     {title == "The Mobile Threats Emerge" ? 
                                     (<p  class="flex items-center   group text-slate-400 border-l-4 px-2 border-x-yellow-500 ">The Mobile Threats Emerge</p>) : 
-                                    (<a href="/page/voices-from-the-community/a-spectrum-of-threats/the-spy-in-your-pocket/mobile-threats-emerge/">The Mobile Threats Emerge</a>)
+                                    (<a href="/page/voices-from-the-community/a-spectrum-of-threats/the-spy-in-your-pocket/mobile-threats-emerge/" class="hover:text-slate-400">The Mobile Threats Emerge</a>)
                                    }
                                 </li>
-                                <li class="py-2 ">
+                                <li class="py-2 ms-14 border-l border-slate-600 pl-3">
                                     {title == "One Click Away From Compromise" ? 
                                     (<p  class="flex items-center p-2  group text-slate-400 border-l-4 px-2 border-x-yellow-500 ">One Click Away From Compromise</p>) : 
-                                    (<a href="/page/voices-from-the-community/a-spectrum-of-threats/the-spy-in-your-pocket/one-click-away-from-compromise/">One Click Away From Compromise</a>)
+                                    (<a href="/page/voices-from-the-community/a-spectrum-of-threats/the-spy-in-your-pocket/one-click-away-from-compromise/" class="hover:text-slate-400">One Click Away From Compromise</a>)
                                    }
                                 </li>
-                            </ul>
+                           
                         
                         </li>
-                    </ul>
+                    
                 </li>
 
              </ul>
           </li>
-          <li class="py-2  ms-2">
+          <li class="py-2  ms-0">
             {title == "The Community Responds" ? 
             (<p  class="flex items-center  text-slate-400  whitespace-nowrap border-l-4 px-2 border-x-yellow-500 ">The Community Responds</p>) : 
-            (<a href="/page/the-community-responds/" class="whitespace-nowrap ">The Community Responds</a>)
+            (<a href="/page/the-community-responds/" class="whitespace-nowrap hover:text-slate-400">The Community Responds</a>)
            }
           </li>
 
