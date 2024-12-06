@@ -17,6 +17,7 @@
     "flowbite": "^2.5.2",
     "gsap": "^3.12.5",
     "tailwindcss": "^3.4.11",
-    "video.js": "^8.18.1"
+    "video.js": "^8.18.1",
+    "videojs-youtube": "^3.0.1"
   }
 }
