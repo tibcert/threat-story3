@@ -9,16 +9,14 @@ import PaginationBlank from "../components/PaginationBlank.astro"
 import SidebarNav from "../components/SidebarNav.astro"
 
 const title = "Digital Disruption:"
+const tagline = "Exploring the Impact of Cyber Attacks on the Tibetan Community in Exile"
 const description = "Exploring the Impact of Cyber Attacks on the Tibetan Community in Exile"
 const image ="thumbnail.jpg"
 
-
-
-
 ---
-<Default title={title} description={description} image={image}>	
+<Default title={title} {description} {tagline} image={image}>	
 	<div class=" flex flex-col snap-mandatory h-full snap-y w-screen items-center bg-slate-900 justify-around pb-44 sm:pb-10 md:pb-0">
-		<Hero {title} tagline={description}/>
+		<Hero {title} {tagline}/>
 		<BannerLeftText title="Introduction" img="/images/city.jpg" link="page/introduction">
 		</BannerLeftText>
 

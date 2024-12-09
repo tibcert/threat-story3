@@ -2,7 +2,7 @@
 import astroConfig from "../../astro.config.mjs";
 import faviconSrc from '../icons/favicon/favicon-32x32.png';
 
-const {title,description,display_image} = Astro.props;
+const {title,tagline,description,display_image} = Astro.props;
 ---
 
 <!-- Global Metadata -->
@@ -20,20 +20,20 @@ const {title,description,display_image} = Astro.props;
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 
 <!-- Primary Meta Tags -->
-<meta name="title" content={title} />
+<meta name="title" content=`${title}${tagline}` />
 <meta name="description" content={description} />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content={Astro.url} />
-<meta property="og:title" content={title} />
+<meta property="og:title" content=`${title}${tagline}` />
 <meta property="og:description" content={description} />
 <meta property="og:image" content={display_image} />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={Astro.url} />
-<meta property="twitter:title" content={title} />
+<meta property="twitter:title" content=`${title}${tagline}` />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={display_image} />
 
