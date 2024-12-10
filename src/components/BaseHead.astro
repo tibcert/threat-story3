@@ -33,10 +33,10 @@ const {title,tagline,description,display_image} = Astro.props;
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content={Astro.url} />
+<meta property="twitter:url" content={siteurl} />
 <meta property="twitter:title" content=`${title}${tagline}` />
 <meta property="twitter:description" content={description} />
-<meta property="twitter:image" content=`${Astro.url}${display_image}` />
+<meta property="twitter:image" content=`${siteurl}${display_image}` />
 
 <title>{title}</title>
 <!-- Google tag (gtag.js) -->
