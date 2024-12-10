@@ -2,6 +2,7 @@
 import astroConfig from "../../astro.config.mjs";
 import faviconSrc from '../icons/favicon/favicon-32x32.png';
 
+const siteurl = "https://digital-distuption.tibcert.org"
 const {title,tagline,description,display_image} = Astro.props;
 ---
 
@@ -31,18 +32,11 @@ const {title,tagline,description,display_image} = Astro.props;
 <meta property="og:image" content={display_image} />
 
 <!-- Twitter -->
-<!-- <meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={Astro.url} />
 <meta property="twitter:title" content=`${title}${tagline}` />
 <meta property="twitter:description" content={description} />
-<meta property="twitter:image" content={display_image} /> -->
-
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="https://digital-disruption.tibcert.org"  />
-<meta name="twitter:creator" content="@tibcert">
-<meta name="twitter:title" content=`${title}${tagline}` />
-<meta name="twitter:description" content={description} />
-<meta name="twitter:image" content={display_image} />
+<meta property="twitter:image" content=`${Astro.url}${display_image}` />
 
 <title>{title}</title>
 <!-- Google tag (gtag.js) -->
